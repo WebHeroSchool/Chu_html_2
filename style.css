@@ -1,0 +1,87 @@
+/* универсальный селектор */
+
+* {
+  font-family: 'Lobster', cursive;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Селектор по элементу */
+
+header {
+  border: 2px solid #ccc;
+  height: 64px;
+  margin: 10px auto;
+  width: 90%;
+}
+
+/* Селектор по классу */
+
+.header__menu {
+  background-color: #aaa;
+  float: left;
+  width: 25%;
+}
+
+/* Дочерние селекторы */
+
+ul>li {
+  background-color: #bce;
+  cursor: pointer;
+  list-style-type: none;
+  margin: 3px 2px 3px;
+  text-transform: uppercase;
+}
+
+/* Вложенные селекторы */
+
+.header h1 {
+  font-family: 'Caveat', cursive;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Селекторы по идентификатору */
+
+#main {
+  position: fixed;
+}
+
+.container {
+  border: 2px solid #ccc;
+  margin: 10px auto;
+  width: 90%;
+  background: rgba(235, 1, 1, .5);
+  z-index: 99;
+}
+
+container
+/* Родственные селекторы */
+
+a~q {
+  color: blue;
+  font-size: 20px;
+}
+
+/* Соседние селекторы */
+
+div+p {
+  color: red;
+  margin: 30px;
+  font-weight: bold;
+  letter-spacing: 2em;
+  text-shadow: 1px 3px 5px;
+}
+
+/* Селекторы по атрибуту */
+
+a[href="//whs.getcourse.ru/pl/teach/control/lesson/view?id=22145632"] {
+  font-size: 30px;
+}
+
+.footer__img {
+  opacity: .9;
+  position: relative;
+  width: 95%;
+  z-index: -10;
+}
