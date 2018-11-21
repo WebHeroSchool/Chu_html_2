@@ -1,6 +1,7 @@
 /* универсальный селектор */
 
 * {
+  font-family: 'Lobster', cursive;
   margin: 0px;
   padding: 0px;
 }
@@ -35,6 +36,7 @@ ul>li {
 /* Вложенные селекторы */
 
 .header h1 {
+  font-family: 'Caveat', cursive;
   margin-top: 10px;
   text-align: center;
 }
