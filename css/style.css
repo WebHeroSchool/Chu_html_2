@@ -284,6 +284,7 @@ label{
 .presentation__vector-links {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	
 }
 
@@ -390,8 +391,12 @@ label{
 	height: 57px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	margin-bottom: 46px;
+}
+.parameter-wrapper {
+	display: flex;
+	justify-content: space-between;
 }
 
 .parameter__color {
@@ -417,7 +422,6 @@ label{
 
 .parameter__color-green {
 	background: #90BD8F;
-	margin-right: 68px
 }
 
 .price {
@@ -464,7 +468,7 @@ label{
 }
 
 .vector2-1 {
-	width: 230px;
+	width: 150px;
 }
 
 /* третий экран*/
@@ -475,11 +479,12 @@ label{
 
 .clot__box {
 	z-index: 100;
+	transform: translateX(-30px);
 }
 
 .clot__img {
 	content: url(../img/clot.png);
-	transform: translateX(100px);
+	transform: translateX(120px);
 }
 .clot__box__text {
 	height: 101px;
@@ -491,11 +496,12 @@ label{
 .box__product__subtitle {
 	margin-bottom: 35px;
 }
+/*
 .clot__links {
 	transform: translate(90px, 70px);
-}
+}*/
 .vector3-1{
-	width: 95px;
+	width: 145px;
 }
 .footer {
 	font-weight: bold;
