@@ -215,7 +215,7 @@ label{
 
 .presentation__box {
 	width: 480px;
-	transform: translateX(9vw);
+	transform: translate(8vw, -3vh);
 	padding: 0;
 	
 }
@@ -342,7 +342,8 @@ label{
  }
 
 .product__wrapper-img {	
-	flex-direction: row;	
+	flex-direction: row;
+	transform: scale(0.8);	
 }
 
 .bag-gray {
@@ -476,6 +477,9 @@ label{
 	background: #EBE3D8; 
 	background: linear-gradient(to right, #EBE3D8 30%, #000 30%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
 }
+.clot__wrapper-img {
+	transform: scale(0.8);
+}
 
 .clot__box {
 	z-index: 100;
@@ -496,10 +500,11 @@ label{
 .box__product__subtitle {
 	margin-bottom: 35px;
 }
-/*
+
 .clot__links {
-	transform: translate(90px, 70px);
-}*/
+	transform: translate(0px, 70px);
+}
+
 .vector3-1{
 	width: 145px;
 }
