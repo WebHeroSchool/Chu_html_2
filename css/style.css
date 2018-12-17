@@ -215,7 +215,7 @@ label{
 
 .presentation__box {
 	width: 480px;
-	transform: translate(8vw, -3vh);
+	transform: translate(8vw, -2vh);
 	padding: 0;
 	
 }
@@ -397,6 +397,7 @@ label{
 }
 .parameter-wrapper {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -478,7 +479,7 @@ label{
 	background: linear-gradient(to right, #EBE3D8 30%, #000 30%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
 }
 .clot__wrapper-img {
-	transform: scale(0.8);
+	transform: scale(0.9);
 }
 
 .clot__box {
