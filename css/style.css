@@ -1,0 +1,786 @@
+body {
+	color: #000;
+	font-family: Montserrat, sans-serif;
+	margin: 0;
+}
+
+.header{
+	display: flex;
+}
+
+.left-content {
+	width: 32%;
+	height: 100%;
+}
+
+.left-content__wrapper {
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 92px;
+	background-color: #000;
+	padding: 0 24px 0 52px;
+	width: 100%;
+}
+
+.heder__lang {
+	display: flex;
+	align-items: center;
+}
+
+.lang-around {
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	width: 6px;
+	height: 6px;
+	transform: rotate(45deg);
+	margin-left: 8px;
+}
+
+.right-content{
+	width: 68%;
+	display: flex;
+	align-items: center;
+	justify-content: center;/* для адаптива flex-end;*/
+}
+
+/*Меню основное*/
+.header__menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	width: 92px;
+	height: 92px;
+    background-color: rgb(0, 0, 0, .05);
+    z-index: 1000;
+}
+
+#header__menu-icon{
+    display: none;
+ }
+
+.header__menu-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+label{
+    display: block;
+
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px;
+}
+
+.burger-line{
+	margin: 0 auto;
+	width: 34.7px;
+	height: 3.48px;
+	top: 39.54px;
+	left: 28.25px;
+	position: absolute;
+ 	background-color: #000;
+    transition: .5s all;
+}
+
+.burger-line-first {
+	top:  39.54px;
+}
+
+.burger-line-second {
+    top: 48.98px;
+}
+
+.header__menu__links{
+    display: block;
+    position: absolute;
+    width:300px;
+    bottom: 0;
+    right: 0px;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .5s all;
+    background-color: rgba(0,0,0,.05);
+}
+
+.header__menu__links-item{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.header__menu__links-item:hover{
+    background-color: rgba(0,0,0,.1);
+}
+
+#header__menu-icon:checked ~ .header__menu__links{
+    max-height: 500px;
+    font-size: 16px;
+    display: block;
+}
+
+#header__menu-icon:checked ~ .burger-line-first{
+    transform: rotate(-45deg) translateY(5px);	   
+}
+
+#header__menu-icon:checked ~ .burger-line-second{
+    transform: rotate(45deg) translateY(-5px);
+}
+
+.presentation{ /* первый экран */
+	height: calc(100vh - 92px);
+	display: flex;
+}
+
+.left-content { /* левая часть экрана */
+	display: flex;
+	height: 100%;
+} 
+
+.presentation__left-content {
+	flex-direction: column;
+	background-color: #000;
+}
+.wrapper-img {
+	display: flex;
+}
+.presentation__wraperr-img {	
+	height: calc(100% - 92px);
+}
+
+.presentation__img {
+	content: url(../img/loco-girl.png);
+	align-self: center;	
+	transform: translateX(50%);
+	width: 100%;
+}
+
+.social-wrapper {
+	height: 92px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.social{ 
+	display: flex;
+}
+
+.social-item {
+	margin-right: 12px;
+}
+
+.scrooll-wrapper { /* иконка прокрутки - мышь  */
+	transform: translate(150%,-60px);
+}
+
+.scrooll {
+	border: 2px solid #000;
+	border-radius: 15px;
+	width: 27px;
+	height: 46px;
+}
+
+.roll {
+	width: 2.45px;
+	height: 8.21px;
+    background: #000;
+    width: 2.45px;
+	height: 8.21px;
+	transform: translate(12px,10px);
+}
+
+.right-content__presentaion { /* правая часть экрана */
+	flex-direction: column;
+}
+
+.box { /* контейнер для описания */
+	padding: 40px;
+}
+
+.presentation__box {
+	width: 480px;
+	transform: translateX(9vw);
+	padding: 0;
+	
+}
+.box__title {
+	margin: 0;
+	font-weight: 700;
+	line-height: 41px;
+	font-size: 40px;
+}
+
+.present__box__title {	
+	font-size: 80px;
+	margin-bottom: 26px;
+	line-height: 82px;
+}
+
+.box__text {
+	font-weight: normal;
+	font-style: normal;
+	line-height: 21px;
+	font-size: 15px;
+}
+
+.present__box__text {
+	width: 467px;
+	margin-bottom: 36px;
+}
+
+.btn {
+	color: #000;
+	background-color: transparent;
+	border: 2px solid #000;
+	height: 44px;
+	font-family: Montserrat;
+	line-height: 0px;
+	font-style: normal;
+	font-weight: 500;	
+	font-size: 13px;	
+	text-decoration: none;
+	text-transform: uppercase;  	
+  	text-shadow: none;width: 203px;	
+}
+
+.link {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 0px;
+	font-size: 13px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	border: none;
+
+}
+.box__btn-add{
+	width: 253px;
+}
+
+.vector-links { /* отображение стрелок у ссылок */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.presentation__vector-links {
+	display: flex;
+	align-items: center;
+	
+}
+
+.vector-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.vector1-1 {
+	display: flex;
+	height: 1px;
+	background-color: #000;
+	width: 43px;
+	transform: translateX(7px);
+}
+
+.vector1-2 {
+	border-right: 1px solid #000;
+	display: flex;
+	border-bottom: 1px solid #000;
+	width: 6px;
+	height: 6px;
+	transform: rotate(-45deg);
+}
+
+.cursor {/* стрелочка под НОВАЯ КОЛЛЕКЦИЯ */
+	border-bottom: 2px solid transparent;
+	border-left: 2px solid transparent;
+	display: block;
+	height: 92px;
+	margin: 0 auto;
+	width: 10px;	
+}
+
+/* второй экран */
+.product,
+.clot {
+	background: #FAE8E4;
+	display: flex;	
+	height: 100vh;
+}
+
+.product__left-content {
+	align-items: center;
+	display:flex;
+	height: 100%;
+	justify-content: center;
+	width: 55%;
+}
+.wraper-img{
+ align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 100%;	
+ }
+
+.product__wrapper-img {	
+	flex-direction: row;	
+}
+
+.bag-gray {
+	content: url(../img/bag-gray.png);
+	transform: translateX(50%);
+	width: 100%;
+}
+
+.bag-pink {
+	content: url(../img/bag-pink.png);
+	transform: translateX(-15%);
+	width: 100%;
+}
+
+.product__right-content {
+	width: 45%;
+}
+
+.product__box {
+	background-color: #fff;
+}
+
+.product__box__title {
+	margin-bottom: 17px;
+}
+
+.text-opacity {
+	opacity: 0.5;
+}
+
+.box__subtitle {
+	margin:0 0 64px 0;
+}
+
+.product__box__text {
+	width: 368px;
+	height: 147px;
+	margin: 0 0 38px 0;
+}
+
+.product__box__btn {
+	margin-left: 
+}
+
+.parameter {
+	height: 57px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 46px;
+}
+
+.parameter__color {
+	border-radius: 50%;
+	width: 30.18px;
+	height: 30px;
+	margin-right: 12px;	
+}
+
+.parameter__color-gray {
+	background: #DEDEDE;
+}
+
+.parameter__color-pink{
+	background: #F29F9F;
+	width: 38px;
+	height: 38px;
+}
+
+.parameter__color-blue {
+	background: #A8BFF9;
+}
+
+.parameter__color-green {
+	background: #90BD8F;
+	margin-right: 68px
+}
+
+.price {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 56px;
+	font-size: 40px;
+}
+
+.count_wrapper {
+	display: flex;
+	width: 100%;
+}
+
+.count {
+	border: 2px solid #000;
+	display: flex;
+	justify-content: space-around;
+	width: 100px;
+	align-items: center;
+	margin-right: 15px;
+}
+
+.count__plus,
+.count__counter,
+.count__minus {
+	margin:0;
+	height: 100%;
+	border: none;	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 40px;
+	font-size: 15px;
+	padding: 0;
+	text-align: center;
+	vertical-align: center;
+}
+
+.product__vector-links {
+	width: 110%;
+	transform: translate(-40px, 70px);
+}
+
+.vector2-1 {
+	width: 230px;
+}
+
+/* третий экран*/
+.clot {
+	background: #EBE3D8; 
+	background: linear-gradient(to right, #EBE3D8 30%, #000 30%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
+}
+
+.clot__box {
+	z-index: 100;
+}
+
+.clot__img {
+	content: url(../img/clot.png);
+	transform: translateX(100px);
+}
+.clot__box__text {
+	height: 101px;
+	margin-bottom: 17px;
+}
+.clot__parameter {
+	display: none;
+}
+.box__product__subtitle {
+	margin-bottom: 35px;
+}
+.clot__links {
+	transform: translate(90px, 70px);
+}
+.vector3-1{
+	width: 95px;
+}
+.footer {
+	font-weight: bold;
+	display: flex;
+	justify-content: flex-end;	
+	padding: 0 21px 16px 0;
+	background: #EBE3D8; 
+	background: linear-gradient(to right, #EBE3D8 30%, #000 30%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
+}
+
+.footer__dev {
+
+	margin-right: 15px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.footer__whs {	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	transform: translateY(-4px);
+}
+
+.footer__webhero {
+	font-size: 15px;
+	color: #fd3;
+	letter-spacing: 0.1em;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.footer__shcool {
+	font-size: 10px;
+	letter-spacing: 0.01em;
+}
+
+/* Portrait tablets and medium desktops */
+@media screen and  (max-width: 992px) {
+	.product__right-content {
+		width: 55%;
+	}
+	.product__left-content {
+		width: 45%;
+	}
+	.presentation__img {
+		transform: translateX(30%);
+		width: 100%;
+	}
+	.presentation__box {
+    	transform: translate(6vw,-2vh);
+	}
+	.social-wrapper,
+	.scrooll	{
+		transform: scale(0.9);
+	}
+	.present__box__title {
+		font-size: 60px;
+		line-height: 62px;
+	}
+	.product__wrapper-img {
+		transform: scale(0.8);
+	}
+	.product__box__title {
+    	font-size: 40px; 
+    } 
+    
+    .social-wrapper,
+    .scrooll {
+    	transform: scale(0.7);
+    }
+    .product__box {
+  	    height: 370px;
+  	}
+   
+       .product__vector-link {
+    transform: translate(-3vw,7vh);
+}
+	.vector2-1 {
+	    width: 160px;
+	}
+	.bag-gray {
+	transform: translateX(40%);
+}
+
+.bag-pink {
+
+	transform: translateX(-20%);
+
+}
+	
+}
+
+
+/* разрешение экранов 800х600 */
+ @media screen and (max-width: 800px){
+ 	.right-content__presentaion,
+ 	.product__box {
+    	transform: scale(0.85);
+	}
+
+	.presentation__box {
+    	transform: translateX(7vw);
+	}
+	.social-wrapper {
+    	transform: scale(0.85);
+        align-items: flex-start;
+
+	}
+	.scrooll {
+		display: none;
+	}
+	.bag-pink {
+    transform: translateX(-30%);
+	}
+ }
+
+
+/* Landscape phones and portrait tablets */
+@media screen and (max-width: 720px) {
+
+	.presentation__img {
+    	transform: translateX(10%);
+    	content: url(../img/loco-girl-2.png);
+    	width: 110%;
+	}
+
+	.presentation__box {
+    	transform: translateX(5vw);
+	}
+}
+
+/* Landscape phones and smaller  разрешение экранов 480х800 */
+ @media screen and (max-width: 480px) {
+ 	.heder__lang {
+		display: none;
+	}	
+	.header__menu {
+		height: 70px;
+		width: 70px;
+	}
+	.header__menu__links {
+    	min-width: 480px;
+	}
+
+	.presentation {
+		height: calc(100vh - 70px);
+		flex-direction: column;
+	}
+
+ 	.presentation__left-content {
+ 		height: calc(100vh - 45vh);
+		background-color: #fff;
+		width: 100%;
+	}
+	.presentation__img {
+		transform: translateX(0%);
+		content: url(../img/loco-girl-2.png);
+		width: 100%;
+		height: auto;
+		align-self: flex-start;
+	}
+
+	.social-wrapper {
+		display: none;
+	}
+	
+	.left-content__wrapper {
+		background-color: #fff;
+		color: #000;
+		height: 70px;
+	}
+	.present__box__text,
+	.box__btn,
+	.box__link,
+	.vector-wrapper,
+	.scrooll {
+		display: none;
+	}	
+
+	.right-content__presentaion {
+		display: flex;
+		justify-content: center;
+    	width: 100%;
+    	transform: scale(1);
+	}
+	
+	.presentation__box {
+		transform: translate(0px,0px);
+		width: 100%;
+		 display: flex;
+        justify-content: center;	
+	}
+	.product__wrapper-img {
+		transform: scale(0.5);
+	}
+
+	
+
+	.present__box__title {		
+		margin-bottom: 10px;
+		line-height: 51px;
+		font-size: 50px;
+		width: 80%;
+	}
+	.product__box__title {
+		font-size: 20px;
+		line-height: 20px;
+		margin: 0;
+	}
+	.box__subtitle {
+		margin-bottom: 16px;
+		line-height: 10px;
+	font-size: 10px;
+	letter-spacing: 0.07em;
+	}
+	.product__box__text {
+    margin-bottom: 12px;
+    line-height: 13px;
+	font-size: 9px;
+	width: 252px;
+	height: auto;
+}
+		.parameter {
+	margin-bottom: 12px;
+		
+}
+.parameter__color {
+	width: 23.35px;
+height: 22.89px;
+}
+.parameter__color-pink {
+width: 29.39px;
+height: 29px;
+}
+.parameter__color-green {
+	margin-right: 60px;
+}
+.price {
+	line-height: 28px;
+font-size: 20px;
+}
+	
+	.cursor {
+		border-bottom: 2px solid #000;
+		border-left: 2px solid #000;
+		height: 10px;
+		width: 10px;
+		transform: rotate(-45deg);
+		display: block;
+	}
+	.product{
+		flex-direction: column;
+
+	}
+	.product__right-content,
+	.product__left-content {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	.product__right-content {
+		height: 60%;
+
+	}
+	.product__left-content {
+		height: 40%;
+	}
+
+	.product__box {
+        height: auto;
+        transform: scale(1);
+        padding: 25px 31px;
+	}
+
+	.bag-gray {
+		display: none;
+	}
+.bag-pink {
+	    transform: translate(0, 40px);
+}
+
+	.count,
+	.product__link {
+		display: none;
+	}
+	.box__btn-add {
+		width: 100%;
+	}
+}
