@@ -709,12 +709,15 @@ label {
 		line-height: 51px;
 		font-size: 50px;
 	}
+	.around-wrapper {
+		transform: translate(20vw,85vh);/* костыль, чтоб на разныч телефонах на месте было*/
+	}
 	.lang-around {
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
     width: 15px;
     height: 15px;
-    transform: rotate(45deg) translate(440px,320px);
+    transform: rotate(45deg);
     z-index: 555;
 	}
   
