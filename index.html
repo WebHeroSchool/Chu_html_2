@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">  
-      <div class="left-content">
+      <div class="header__left-content">
         <div class="left-content__wrapper">
           <span class="header__logo">LOCO</span>
 <!--  выбор языка  --> 
@@ -22,13 +22,15 @@
           </div>
         </div>
       </div>
-      <div class="right-content">
+      <div class="header__right-content">
 <!--основное меню-->
         <div class="header__menu">
-          <input type="checkbox" class="header__menu-icon" id="header__menu-icon">
+          <input type="checkbox" class="header__menu-icon" id="header__menu-icon">         
           <label  for="header__menu-icon"></label>
           <span class="burger-line burger-line-first"></span>
-          <span class="burger-line burger-line-second"></span>          
+          <span class="burger-line burger-line-second"></span>
+          <span class="burger-line burger-line-third"></span>
+          <span class="burger-line burger-line-fourth"></span>          
           <nav class="header__menu__links">
             <a class="header__menu__links-item">пункт меню 1</a>
             <a class="header__menu__links-item">пункт меню 2</a>
@@ -55,12 +57,7 @@
               <img src="img/facebook.svg" title="Страничка Loco  FB" alt="loco in FB">
             </a>            
           </div>
-        </div>
-        <div class="scrooll-wrapper">
-         <div class="scrooll">
-            <div class="roll"></div>
-         </div>
-        </div>
+        </div>       
       </div>
       <div class="right-content right-content__presentaion"> 
         <div class="box presentation__box">
@@ -69,7 +66,7 @@
           <div class="vector-links">
               <button class="btn box__btn">читать дальше</button>
               <!-- ссылки и стрелки ссылок -->
-              <div class="presentation__vector-links ">
+              <div class="wrapper__vector-links ">
                 <a href="#" class="link">Другие предложения </a>
                 <div class="vector-wrapper"> 
                   <div class="vector1-1"></div>
@@ -77,6 +74,11 @@
                 </div>
               </div>  
           </div>  
+        </div> 
+        <div class="scrooll-wrapper">
+         <div class="scrooll">
+            <div class="roll"></div>
+         </div>
         </div>
       </div>
     </section>
@@ -104,35 +106,36 @@
             </div>
             <span class="price">1990₽</span>
           </div>      
-        <div class="count_wrapper">
+          <div class="count_wrapper">
 <!--выбор количества-->
-          <div class="count">
-            <button class="btn count__minus">-</button>
-            <span class="btn count__counter">1</span> 
-            <button class="btn count__plus">+</button>
+            <div class="count">
+              <button class="btn count__minus">-</button>
+              <span class="btn count__counter">1</span> 
+              <button class="btn count__plus">+</button>
+            </div>
+            <button class="btn box__btn-add">добавить в корзину</button>
           </div>
-          <button class="btn box__btn-add">добавить в корзину</button>
-        </div>     
+        </div>
 <!-- ссылки и стрелки ссылок -->
-        <div class="presentation__vector-links product__vector-links"> 
+        <div class="wrapper__vector-links"> 
           <a href="#" class="link">Другие товары на LOCO.COM</a>
           <div class="vector-wrapper"> 
             <div class="vector1-1 vector2-1"></div>
             <div class="vector1-2"></div>
           </div>
-        </div>    
-      </div>   
+        </div> 
+      </div>     
     </section>
 <!-- третий экран -->
     <section class="product clot"> 
       <div class="left-content product__left-content">
 <!-- обёртка для изображений --> 
-        <div class="wraper-img clot__wrapper-img">
+        <div class="wraper-img">
           <img class="clot__img" title="LOCO clot" alt="Одежда от LOCO">
         </div>
       </div>
-      <div class="right-content product__right-content">
-        <div class="box product__box clot__box">
+      <div class="right-content clot__right-content">
+        <div class="box clot__box">
           <h1 class="box__title product__box__title">Serene Total Look</h1>
           <h2 class="box__subtitle box__product__subtitle text-opacity">осенняя коллекция</h2>
           <p class="box__text product__box__text clot__box__text text-opacity">Джинсы, свитер, обувь.<br> В комплект также входит пакет ароматного чая и кружка.</p>
@@ -153,6 +156,7 @@
             </div>
             <button class="btn box__btn-add">добавить в корзину</button>
           </div> 
+        </div>
 <!-- ссылки и стрелки ссылок -->
         <div class="presentation__vector-links product__vector-links
         clot__links"> 

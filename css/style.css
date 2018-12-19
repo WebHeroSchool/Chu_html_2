@@ -6,11 +6,15 @@ body {
 
 .header{
 	display: flex;
+	height: 92px;
 }
-
 .left-content {
-	width: 32%;
+	display: flex;
 	height: 100%;
+	width: 50%;
+}
+.header__left-content {	
+	width: 32%;
 }
 
 .left-content__wrapper {
@@ -18,10 +22,9 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 92px;
+	height: 100%;
 	background-color: #000;
 	padding: 0 24px 0 52px;
-	width: 100%;
 }
 
 .header__logo {
@@ -49,12 +52,14 @@ body {
 	transform: rotate(45deg);
 	margin-left: 8px;
 }
-
-.right-content{
-	width: 68%;
+.right-content {
+	width: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;/* для адаптива flex-end;*/
+}
+.header__right-content{
+	width: 68%;
 }
 
 /*Меню основное*/
@@ -63,15 +68,18 @@ body {
 	top: 0;
 	right: 0;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 92px;
-	height: 92px;
+	height: 100%;
     background-color: rgb(0, 0, 0, .05);
     z-index: 1000;
 }
 
 #header__menu-icon{
     display: none;
- }
+}
 
 .header__menu-icon {
 	display: flex;
@@ -94,11 +102,18 @@ label {
 }
 
 .burger-line-first {
-	transform: translate(50%, 36px);
+	transform: translateY(10px);
 }
 
 .burger-line-second {
-	transform: translate(-50%, 56px);
+	display: none;
+	
+}
+.burger-line-third {
+	display: none;
+}
+.burger-line-fourth {
+	transform: translateY(-10px);
 }
 
 .header__menu__links{
@@ -134,48 +149,55 @@ label {
 }
 
 #header__menu-icon:checked ~ .burger-line-first {
-    transform: rotate(-45deg) translate(-40%, 50px);   
+    display: none;   
 }
 
-#header__menu-icon:checked ~ .burger-line-second{
-    transform: rotate(45deg) translate(40%, 50px)
+#header__menu-icon:checked ~ .burger-line-second {
+   transform: rotate(-45deg) translate(0px, 1.47px);
+    display: block;
+}
+#header__menu-icon:checked ~ .burger-line-third {
+    transform: rotate(45deg) translate(0px, -1.47px);
+    display: block;
+}
+#header__menu-icon:checked ~ .burger-line-fourth {
+     display: none;
 }
 
-.presentation{ /* первый экран */
+/* первый экран */
+.presentation,
+.product,
+.clot{ /*  общие параметры для экранов  */
+	display: flex;
+}
+
+.presentation {
+	background: linear-gradient(to right, #000 32%, #fff 32%, #fff 100%);
 	height: calc(100vh - 92px);
-	display: flex;
 }
-
-.left-content { /* левая часть экрана */
-	display: flex;
-	height: 100%;
-} 
 
 .presentation__left-content {
 	flex-direction: column;
-	background-color: #000;
 }
 .wrapper-img {
 	display: flex;
 }
 .presentation__wraperr-img {	
-	height: calc(100% - 92px);
+	height: calc(100% - 92px);/*100% левой части минус социалки*/
 }
 
 .presentation__img {
 	content: url(../img/loco-girl.png);
 	align-self: center;	
-	transform: translateX(50%);
-	width: 100%;
+	transform: translateX(30%);
+	width: 80%;
 }
 
 .social-wrapper {
 	height: 92px;
 	display: flex;
-	align-items: flex-end;
-	margin-left: 52px;
+	padding-left: 52px;
 	justify-content: flex-start;
-	box-sizing: border-box;
 }
 
 .social{ 
@@ -186,40 +208,21 @@ label {
 	margin-right: 12px;
 }
 
-.scrooll-wrapper { /* иконка прокрутки - мышь  */
-	transform: translate(110%,-50px);
-	display: flex;
-	justify-content: center;
-}
-
-.scrooll {
-	border: 2px solid #000;
-	border-radius: 15px;
-	width: 27px;
-	height: 46px;
-}
-
-.roll {
-	width: 2.45px;
-	height: 8.21px;
-    background: #000;
-    width: 2.45px;
-	height: 8.21px;
-	transform: translate(12px,10px);
-}
-
 .right-content__presentaion { /* правая часть экрана */
-	flex-direction: column;
+	height: 100%;
+	flex-wrap: wrap;
+	align-items: flex-end;
 }
 
 .box { /* контейнер для описания */
 	padding: 40px;
+	display: flex;
+	flex-direction: column;
 }
 
 .presentation__box {
-	width: 480px;
-	transform: translate(60px, -60px);
 	padding: 0;
+
 	
 }
 .box__title {
@@ -229,7 +232,8 @@ label {
 	font-size: 40px;
 }
 
-.present__box__title {	
+.present__box__title {
+	width: 475px;	
 	font-size: 80px;
 	margin-bottom: 26px;
 	line-height: 82px;
@@ -284,7 +288,7 @@ label {
 	justify-content: space-between;
 
 }
-.presentation__vector-links {
+.wrapper__vector-links {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -306,39 +310,49 @@ label {
 
 .vector1-2 {
 	border-right: 1px solid #000;
-	display: flex;
 	border-bottom: 1px solid #000;
 	width: 6px;
 	height: 6px;
 	transform: rotate(-45deg);
 }
 
-.cursor {/* стрелочка под НОВАЯ КОЛЛЕКЦИЯ */
-	border-bottom: 2px solid transparent;
-	border-left: 2px solid transparent;
-	display: block;
+.scrooll-wrapper { /* иконка прокрутки - мышь  */
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	height: 92px;
-	margin: 0 auto;
-	width: 10px;	
+	width: 100%;
+
+}
+
+.scrooll {
+	border: 2px solid #000;
+	border-radius: 15px;
+	width: 27px;
+	height: 46px;
+}
+
+.roll {
+	width: 2.45px;
+	height: 8.21px;
+    background: #000;
+    width: 2.45px;
+	height: 8.21px;
+	transform: translate(12px,10px);
 }
 
 /* второй экран */
-.product,
-.clot {
+.product {
 	background: #FAE8E4;
-	display: flex;	
 	height: 100vh;
 }
 
 .product__left-content {
 	align-items: center;
-	display:flex;
-	height: 100%;
 	justify-content: center;
-	width: 50%;
 }
 .wraper-img{
- align-items: center;
+ 	align-items: center;
 	display: flex;
 	justify-content: center;
 	height: 100%;	
@@ -361,11 +375,14 @@ label {
 }
 
 .product__right-content {
-	width: 50%;
+	flex-wrap: wrap;
+	align-content: center;
 }
 
-.product__box {
+.product__box,
+.clot__box {
 	background-color: #fff;
+	margin-bottom: 39px;
 }
 
 .product__box__title {
@@ -409,6 +426,9 @@ label {
 	height: 30px;
 	margin-right: 12px;	
 }
+.parameter__color:hover {
+	transform: scale(1.25);
+}
 
 .parameter__color-gray {
 	background: #DEDEDE;
@@ -416,8 +436,6 @@ label {
 
 .parameter__color-pink{
 	background: #F29F9F;
-	width: 38px;
-	height: 38px;
 }
 
 .parameter__color-blue {
@@ -438,7 +456,6 @@ label {
 
 .count_wrapper {
 	display: flex;
-	width: 100%;
 }
 
 .count {
@@ -453,7 +470,7 @@ label {
 .count__plus,
 .count__counter,
 .count__minus {
-	margin:0;
+	margin: 0;
 	height: 100%;
 	border: none;	
 	font-family: Montserrat;
@@ -466,32 +483,31 @@ label {
 	vertical-align: center;
 }
 
-.product__vector-links {
-	width: 110%;
-	transform: translate(-40px, 70px);
-}
-
 .vector2-1 {
-	width: 150px;
+	width: 235px;
 }
 
 /* третий экран*/
 .clot {
-	background: #EBE3D8; 
+	flex-wrap: wrap;
+	height: calc(100vh-92px);/* высота экрана минус подвал */
 	background: linear-gradient(to right, #EBE3D8 30%, #000 30%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
-}
-.clot__wrapper-img {
-
-}
-
-.clot__box {
-	z-index: 100;
 }
 
 .clot__img {
 	content: url(../img/clot.png);
-	transform: translateX(150px);
+	transform: translateX(20%);
 }
+
+.clot__right-content {
+	flex-wrap: wrap;
+	align-content: center;
+	z-index: 100;
+}
+.clot__box {
+	padding: 45px;
+}
+
 .clot__box__text {
 	height: 101px;
 	margin-bottom: 17px;
@@ -504,23 +520,23 @@ label {
 }
 
 .clot__links {
-	transform: translate(0px, 70px);
+	display: flex;
+	justify-content: flex-end;
+	width: 475px;
 }
 
 .vector3-1{
-	width: 145px;
+	width: 108px;
 }
 .footer {
 	font-weight: bold;
 	display: flex;
 	justify-content: flex-end;	
 	padding: 0 21px 16px 0;
-	background: #EBE3D8; 
 	background: linear-gradient(to right, #EBE3D8 30%, #000 30%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
 }
 
 .footer__dev {
-
 	margin-right: 15px;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -547,86 +563,26 @@ label {
 /* Portrait tablets and medium desktops */
 @media screen and  (max-width: 1024px) {
 	.presentation__img {
-		transform: translateX(35%);
+		transform: translateX(20%);
+	}	
+	.present__box__title {
+		font-size: 50px;
+		line-height: 51px;
 	}
+
 	.bag-gray {
-		transform: translateX(50%);
+		transform: scale(.7) translateX(50%);
 	}
 
 	.bag-pink {
-		transform: translateX(-25%);
+		transform: scale(.9) translateX(-35%);
 	}
 
 	.clot__img {
-
-    transform: scale(0.9) translateX(150px);
+    transform: scale(.7) translateX(15%);
 	}
 }
-	
 
-
-/* разрешение экранов 800х600 */
- @media screen and (max-width: 800px){
- 	.header {
- 		height: 70px;
- 	}
- 	.header__logo {
-		font-size: 20px;
- 	}
- 	.header__lang {
-	font-size: 15px;	
-	}
-	.header__menu {
-	    width: 70px;
-   		height: 70px;
-	}
-	.burger-line-first {
-   		transform: translate(50%, 30px);
-	}
-	.burger-line-second {
-		transform: translate(-50%, 40px);
-	}
-	#header__menu-icon:checked ~ .burger-line-first {
-    transform: rotate(-45deg) translate(-30%, 38px);   
-	}
-
-	#header__menu-icon:checked ~ .burger-line-second{
-	    transform: rotate(45deg) translate(30%, 38px)
-	}
-	.presentation__img {
-		transform: translateX(25%);
-		content: url(../img/loco-girl-2.png);
-		
-	}
-	.presentation__box {
-    transform: scale(0.8) translate(50px, -65px);
-
-	}
-	.social-wrapper {
-		height: auto;
-		transform: scale(0.8);
-		margin: 0;
-	}
-	.scrooll-wrapper {
-		transform: scale(0.8) translate(130%,-55px);
-	}
-
-	.product__wrapper-img,
-	.product__right-content {
-		transform: scale(0.8);
-	}
-	.bag-pink {
-    	transform: translateX(-35%);
-	}
-	.bag-gray {
-    	transform: translateX(40%);
-	}
-	.clot__img {
-    	transform: scale(0.6) translateX(150px);
-	}
-
-	
-}
 
 
 /* Landscape phones and portrait tablets */
@@ -644,12 +600,21 @@ label {
  }
 
  @media screen and (max-width: 375px) {
+ 	.header {
+ 		height: 70px;
+ 	}
+ 	.header__left-content {
+    width: 50%;
+	}
 
  	.left-content__wrapper {
  		color: #000;
-	    padding-left: 26px;
-	    height: 70px;
+	    padding: 0 0 0 24px;
 	    background-color: #fff;
+	    width: 100%;
+	}
+	.header__logo {
+
 	}
  	.lang-name {
 		display: none;
@@ -659,58 +624,51 @@ label {
 		width: 70px;
 	}
 	.header__menu__links {
-    	min-width: 375px;
+    	min-width: 100vw;
 	}
 
 	.presentation {
 		height: calc(100vh - 70px);
-		flex-direction: column;
 		background-image: url(../img/loco-girl-2.png);
-		background-size: cover;
-		
+		background-size: cover;		
 	}
 
  	.presentation__left-content {
  		display: none;
-	
 	}
 
 	.social-wrapper {
 		display: none;
 	}
-	
-
 	.present__box__text,
 	.box__btn,
 	.box__link,
 	.vector-wrapper,
-	.scrooll,
+	.scrooll-wrapper,
 	.vector-links,
 	.link {
 		display: none;
 	}	
 
 	.right-content__presentaion {
-		display: flex;
-		justify-content: center;
     	width: 100%;
-    	height: 100%;
-    	transform: scale(1);
+    	height: 90%;
 	}
 	
 	.presentation__box {
-		transform: translate(20px,150px);
 		width: 100%;
-		 display: flex;
-        justify-content: center;	
+        justify-content: center;
+        align-items: center;
+
 	}
-	.present__box__title {
-		width: 100%;
-		line-height: 51px;
-		font-size: 50px;
+	.present__box__title {/* не могу сдвинуть на центр. в чет проблема?*/
+		width: 80%;
+		line-height: 41px;
+		font-size: 40px;
+		margin-bottom: 0;	
 	}
 	.around-wrapper {
-		transform: translate(20vw,85vh);/* костыль, чтоб на разныч телефонах на месте было*/
+		transform: translateY(90vh);/* костыль, чтоб на разныч телефонах на месте было*/
 	}
 	.lang-around {
     border-right: 1px solid #000;
