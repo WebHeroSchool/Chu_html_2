@@ -615,7 +615,7 @@ label {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
 	.header {
 		height: 70px;
 	}
@@ -662,6 +662,7 @@ label {
 
 	.scrooll-wrapper {
 		height: 70px;
+		padding-left: 8vw;
 		align-items: flex-start;
 	}
 
