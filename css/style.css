@@ -8,16 +8,18 @@ body {
 	display: flex;
 	height: 92px;
 }
+
 .left-content {
 	display: flex;
 	height: 100%;
 	width: 50%;
 }
+
 .header__left-content {	
 	width: 32%;
 }
 
-.left-content__wrapper {
+.header__left-content__wrapper {
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
@@ -35,6 +37,7 @@ body {
 	text-align: center;
 	letter-spacing: 0.07em;
 }
+
 .header__lang {
 	font-style: normal;
 	font-weight: 500;
@@ -52,12 +55,14 @@ body {
 	transform: rotate(45deg);
 	margin-left: 8px;
 }
+
 .right-content {
 	width: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;/* для адаптива flex-end;*/
 }
+
 .header__right-content{
 	width: 68%;
 }
@@ -86,6 +91,7 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
 label {
    position: absolute;
     width: 100%;
@@ -101,18 +107,19 @@ label {
     transition: .5s all;
 }
 
-.burger-line-first {
+.burger-line--first {
 	transform: translateY(10px);
 }
 
-.burger-line-second {
-	display: none;
-	
-}
-.burger-line-third {
+.burger-line--second {
 	display: none;
 }
-.burger-line-fourth {
+
+.burger-line--third {
+	display: none;
+}
+
+.burger-line--fourth {
 	transform: translateY(-10px);
 }
 
@@ -148,19 +155,21 @@ label {
     display: block;
 }
 
-#header__menu-icon:checked ~ .burger-line-first {
+#header__menu-icon:checked ~ .burger-line--first {
     display: none;   
 }
 
-#header__menu-icon:checked ~ .burger-line-second {
+#header__menu-icon:checked ~ .burger-line--second {
    transform: rotate(-45deg) translate(0px, 1.47px);
     display: block;
 }
-#header__menu-icon:checked ~ .burger-line-third {
+
+#header__menu-icon:checked ~ .burger-line--third {
     transform: rotate(45deg) translate(0px, -1.47px);
     display: block;
 }
-#header__menu-icon:checked ~ .burger-line-fourth {
+
+#header__menu-icon:checked ~ .burger-line--fourth {
      display: none;
 }
 
@@ -179,10 +188,12 @@ label {
 .presentation__left-content {
 	flex-direction: column;
 }
+
 .wrapper-img {
 	display: flex;
 	justify-content: flex-end;
 }
+
 .presentation__wraperr-img {	
 	height: calc(100% - 92px);/*100% левой части минус социалки*/
 }
@@ -190,22 +201,21 @@ label {
 .presentation__img {
 	content: url(../img/loco-girl.png);
 	align-self: center;	
-	
 	width: 70%;
 }
 
-.social-wrapper {
+.social {
 	height: 92px;
 	display: flex;
 	padding-left: 52px;
 	justify-content: flex-start;
 }
 
-.social{ 
+.social-wrapper{ 
 	display: flex;
 }
 
-.social-item {
+.social__item {
 	margin-right: 12px;
 }
 
@@ -224,8 +234,8 @@ label {
 
 .presentation__box {
 	padding: 0;
-
 }
+
 .box__title {
 	margin: 0;
 	font-weight: 700;
@@ -245,10 +255,6 @@ label {
 	line-height: 21px;
 	font-size: 15px;
 	max-width: 467px;
-}
-
-.present__box__text {
-	
 }
 
 .btn {
@@ -277,9 +283,9 @@ label {
 	text-transform: uppercase;
 	color: #000;
 	border: none;
-
 	margin-right: 10px;
 }
+
 .vector-links { /* отображение стрелок у ссылок */
 	display: flex;
 	width: 100%;
@@ -292,14 +298,13 @@ label {
 	width: 253px;
 }
 
-
 .wrapper__vector-links {
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
 	height: 44px;
-	
 }
+
 .presentation__wrapper__vector-links {
 	align-items: center;
 }
@@ -314,7 +319,6 @@ label {
 	height: 1px;
 	background-color: #000;
 	width: 43px;
-
 }
 
 .vector1-2 {
@@ -331,7 +335,6 @@ label {
 	align-items: center;
 	height: 92px;
 	width: 100%;
-
 }
 
 .scrooll {
@@ -360,6 +363,7 @@ label {
 	align-items: center;
 	justify-content: center;
 }
+
 .wraper-img{
  	align-items: center;
 	display: flex;
@@ -394,6 +398,7 @@ label {
 	align-items: center;
 	justify-content: center;
 }
+
 .product__box,
 .clot__box {
 	background-color: #fff;
@@ -426,6 +431,7 @@ label {
 	justify-content: space-between;
 	margin-bottom: 46px;
 }
+
 .parameter-wrapper {
 	display: flex;
 	align-items: center;
@@ -438,6 +444,7 @@ label {
 	height: 30px;
 	margin-right: 12px;	
 }
+
 .parameter__color:hover {
 	transform: scale(1.25);
 }
@@ -517,6 +524,7 @@ label {
 	align-content: center;
 	z-index: 100;
 }
+
 .clot__box {
 	padding: 45px;
 }
@@ -525,9 +533,11 @@ label {
 	height: 101px;
 	margin-bottom: 17px;
 }
+
 .clot__parameter {
 	display: none;
 }
+
 .box__product__subtitle {
 	margin-bottom: 35px;
 }
@@ -537,6 +547,7 @@ label {
 	justify-content: flex-end;
 	width: 475px;
 }
+
 .clot__vector-links {
 	width: 100%;
 	justify-content: flex-end;
@@ -545,6 +556,7 @@ label {
 .vector3-1{
 	width: 108px;
 }
+
 .footer {
 	font-weight: bold;
 	display: flex;
@@ -558,6 +570,7 @@ label {
 	text-transform: uppercase;
 	font-size: 12px;
 }
+
 .footer__whs {	
 	display: flex;
 	flex-direction: column;
@@ -597,56 +610,114 @@ label {
 	}
 
 	.clot__img {
-    transform: scale(1.2) translateX(15%);
+    	transform: scale(1.2) translateX(15%);
 	}
 }
 
 
-
-/* Landscape phones and portrait tablets */
-@media screen and (max-width: 720px) {
-
-	
-} 
-@media screen and (max-width: 646px) {
-
-}
-
-/* Landscape phones and smaller  разрешение экранов 480х800 */
- @media screen and (max-width: 480px) {
-
- }
-
- @media screen and (max-width: 375px) {
- 	.header {
- 		height: 70px;
- 	}
- 	.header__left-content {
-    width: 50%;
+@media screen and (max-width: 800px) {
+	.header {
+		height: 70px;
 	}
 
- 	.left-content__wrapper {
+	.presentation__left-content,
+	.product__left-content {
+		width: 40%;
+	}
+
+	.right-content__presentaion,
+	.product__right-content,
+	.clot__right-content {
+		width: 60%;
+	}
+
+	.btn {
+		padding: 10px;
+	}
+
+	.count__minus,
+	.count__counter,
+	.count__plus {
+		padding: 0;
+	}
+
+	.header__menu {
+		height: 70px;
+		width: 70px;
+	}
+
+	.presentation {
+		height: calc(100vh - 70px);
+	}
+
+		.presentation__img {
+    transform: translateX(-15%);
+	}
+
+	.social {
+		transform: scale(0.8);
+		padding-left: 0;
+		align-items: center;
+	}
+
+	.scrooll-wrapper {
+		height: 70px;
+		align-items: flex-start;
+	}
+
+	.scrooll {
+		transform: scale(0.8);
+	}
+
+	.box {
+    	padding: 30px;
+	}
+
+	.product__box__title {
+		margin: 0;
+	}
+
+	.box__subtitle {
+		margin-bottom: 16px;
+	}
+
+	.product__box__text {
+   		margin-bottom: 12px;
+	}
+	.parameter {
+		margin-bottom: 12px;
+		
+	}
+	.wrapper__vector-links {
+	    align-items: center;
+	} 
+	.vector2-1 {
+	    width: 170px;
+	}
+}
+
+
+@media screen and (max-width: 760px) {
+    .header__left-content {
+    	width: 50%;
+	}
+
+ 	.header__left-content__wrapper {
  		color: #000;
 	    padding: 0 0 0 24px;
 	    background-color: #fff;
 	    width: 100%;
 	}
-	.header__logo {
-
-	}
+	
  	.lang-name {
 		display: none;
 	}	
-	.header__menu {
-		height: 70px;
-		width: 70px;
-	}
+	
 	.header__menu__links {
     	min-width: 100vw;
 	}
 
 	.presentation {
-		height: calc(100vh - 70px);
 		background-image: url(../img/loco-girl-2.png);
 		background-size: cover;		
 	}
@@ -655,9 +726,10 @@ label {
  		display: none;
 	}
 
-	.social-wrapper {
+	.social {
 		display: none;
 	}
+
 	.present__box__text,
 	.box__btn,
 	.box__link,
@@ -674,80 +746,78 @@ label {
 	.presentation__box {
 		width: 100%;
         justify-content: center;
-        align-items: center;
-
+        align-items: flex-start;
 	}
+
 	.present__box__title {/* не могу сдвинуть на центр. в чет проблема?*/
 		width: 80%;
-		line-height: 41px;
-		font-size: 40px;
+		line-height: 81px;
+		font-size: 80px;
 		margin-bottom: 0;	
 	}
+
 	.around-wrapper {
 		transform: translateY(90vh);/* костыль, чтоб на разныч телефонах на месте было*/
 	}
+
 	.lang-around {
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    width: 15px;
-    height: 15px;
-    transform: rotate(45deg);
-    z-index: 555;
+	    border-right: 1px solid #000;
+	    border-bottom: 1px solid #000;
+	    width: 15px;
+	    height: 15px;
+	    transform: rotate(45deg);
+	    z-index: 555;
 	}
   
 	.product__wrapper-img {
-		transform: scale(0.5);
+		transform: scale(0.7);
 	}
 
 	.product__box__title {
-		font-size: 20px;
-		line-height: 20px;
-		margin: 0;
+		margin-bottom: 10px;
 	}
+
 	.box__subtitle {
 		margin-bottom: 16px;
-		line-height: 10px;
-	font-size: 10px;
-	letter-spacing: 0.07em;
 	}
+
 	.product__box__text {
-    margin-bottom: 12px;
-    line-height: 13px;
-	font-size: 9px;
-	width: 252px;
-	height: auto;
-}
-		.parameter {
-	margin-bottom: 12px;
-		
-}
-.parameter__color {
-	width: 23.35px;
-height: 22.89px;
-}
-
-.parameter__color-green {
-	margin-right: 60px;
-}
-.price {
-	line-height: 28px;
-font-size: 20px;
-}
-	
-	.product{
-		flex-direction: column;
-
+    	margin-bottom: 12px;
 	}
+
+	.parameter {
+		margin-bottom: 12px;
+	}
+
+	.parameter__color {
+		width: 23.35px;
+		height: 22.89px;
+	}
+	
+	.parameter__color-green {
+		margin-right: 60px;
+	}
+
+	.price {
+		line-height: 28px;
+		font-size: 20px;
+	}
+	
+	.product {
+		flex-direction: column;
+	}
+
 	.product__right-content,
 	.product__left-content {
 		width: 100%;
 		align-items: center;
 		justify-content: center;
 	}
+
 	.product__right-content {
 		height: 60%;
-
 	}
+
 	.product__left-content {
 		height: 40%;
 	}
@@ -761,9 +831,11 @@ font-size: 20px;
 	.bag-gray {
 		display: none;
 	}
-.bag-pink {
-	transform: scale(1) translate(0);
+
+	.bag-pink {
+		transform: scale(1.4) translate(0);
 	}
+
 	.btn {
 		height: 37px;
 	}
@@ -772,25 +844,29 @@ font-size: 20px;
 	.product__link {
 		display: none;
 	}
+
 	.box__btn-add {
 		width: 100%;
 	}
+
 	.clot {
 	background: linear-gradient(to right, #EBE3D8 25%, #000 25%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
-
 	height: 100vh;/* высота экрана минус подвал */
-	
-}
-.clot__left-content {
-	height: 50%;
-}
+	}
+
+	.clot__left-content {
+		height: 50%;
+	}
+
 	.clot__img {
     transform: scale(.8) translateY(20%);
     align-self: flex-start;
 	}
+
 	.clot__right-content{
 		width: 100%;
 	}
+
 	.clot__box{
 		padding: 25px;
 		margin-bottom: 10vw;
@@ -799,33 +875,80 @@ font-size: 20px;
 	.clot__link {
 		line-height: normal;
 	}
-.clot__vector-links {
-	align-self: flex-end;
-	display: block;
-	width: 50%;
-}
-.vector3-1 {
-    width: 141px;
-}
-.footer {
-	padding: 0 10px 10px 0;
-	background: linear-gradient(to right, #EBE3D8 25%, #000 25%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
-}
-.footer__dev {
-	margin-right: 5px;
-	text-transform: uppercase;
-	font-size: 10px;
-}
-.footer__whs {	
-	display: flex;
-	transform: translateY(-1px);
+
+	.clot__vector-links {
+		align-self: flex-end;
+		display: block;
+		width: 50%;
+	}
+	.vector3-1 {
+	    width: 141px;
+	}
+	.footer {
+		padding: 0 10px 10px 0;
+		background: linear-gradient(to right, #EBE3D8 25%, #000 25%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
+	}
+	.footer__dev {
+		margin-right: 5px;
+		text-transform: uppercase;
+		font-size: 10px;
+	}
+	.footer__whs {	
+		display: flex;
+		transform: translateY(-1px);
+	}
+
+	.footer__webhero {
+		font-size: 10px;
+		
+	}
+	.footer__shcool {
+		font-size: 8px;
+	}
 }
 
-.footer__webhero {
-	font-size: 10px;
 	
+@media screen and (max-width: 646px) {
+
 }
-.footer__shcool {
-	font-size: 8px;
-}
+
+/* Landscape phones and smaller  разрешение экранов 480х800 */
+ @media screen and (max-width: 480px) {
+	.presentation__box {
+		width: 100%;
+        justify-content: center;
+        align-items: center;
+	}
+
+	.present__box__title {/* не могу сдвинуть на центр. в чет проблема?*/
+		width: 80%;
+		line-height: 41px;
+		font-size: 40px;
+		margin-bottom: 0;	
+	}
+  
+	.product__wrapper-img {
+		transform: scale(0.5);
+	}
+
+	.product__box__title {
+		font-size: 20px;
+		line-height: 20px;
+		margin: 0;
+	}
+
+	.box__subtitle {
+		margin-bottom: 16px;
+		line-height: 10px;
+		font-size: 10px;
+		letter-spacing: 0.07em;
+	}
+
+	.product__box__text {
+	    margin-bottom: 12px;
+	    line-height: 13px;
+		font-size: 9px;
+		width: 252px;
+		height: auto;
+	}
 }
