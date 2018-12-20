@@ -138,7 +138,7 @@ label {
     text-decoration: none;
 }
 
-.header__menu__links-item:hover{
+.header__menu__links-item:hover {
     background-color: rgba(0,0,0,.1);
 }
 
@@ -172,7 +172,7 @@ label {
 }
 
 .presentation {
-	background: linear-gradient(to right, #000 32%, #fff 32%, #fff 100%);
+	background: #fff linear-gradient(to right, #000 32%, #fff 32%, #fff 100%);
 	height: calc(100vh - 92px);
 }
 
@@ -181,6 +181,7 @@ label {
 }
 .wrapper-img {
 	display: flex;
+	justify-content: flex-end;
 }
 .presentation__wraperr-img {	
 	height: calc(100% - 92px);/*100% левой части минус социалки*/
@@ -189,7 +190,7 @@ label {
 .presentation__img {
 	content: url(../img/loco-girl.png);
 	align-self: center;	
-	transform: translateX(30%);
+	
 	width: 70%;
 }
 
@@ -208,22 +209,22 @@ label {
 	margin-right: 12px;
 }
 
-.right-content__presentaion { /* правая часть экрана */
+.right-content__presentaion { /* правая часть первого экрана */
 	height: 100%;
 	flex-wrap: wrap;
 	align-items: flex-end;
 }
 
-.box { /* контейнер для описания */
+.box { /* контейнер для описания товара */
 	padding: 40px;
 	display: flex;
 	flex-direction: column;
+	max-width: 475px
 }
 
 .presentation__box {
 	padding: 0;
 
-	
 }
 .box__title {
 	margin: 0;
@@ -233,7 +234,6 @@ label {
 }
 
 .present__box__title {
-	width: 475px;	
 	font-size: 80px;
 	margin-bottom: 26px;
 	line-height: 82px;
@@ -244,17 +244,18 @@ label {
 	font-style: normal;
 	line-height: 21px;
 	font-size: 15px;
+	max-width: 467px;
 }
 
 .present__box__text {
-	width: 467px;
-	margin-bottom: 36px;
+	
 }
 
 .btn {
 	color: #000;
 	background-color: transparent;
 	border: 2px solid #000;
+	padding: 0 41px;
 	height: 44px;
 	font-family: Montserrat;
 	line-height: 0px;
@@ -263,7 +264,7 @@ label {
 	font-size: 13px;	
 	text-decoration: none;
 	text-transform: uppercase;  	
-  	text-shadow: none;width: 203px;	
+  	text-shadow: none;	
 }
 
 .link {
@@ -277,22 +278,30 @@ label {
 	color: #000;
 	border: none;
 
+	margin-right: 10px;
 }
+.vector-links { /* отображение стрелок у ссылок */
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
 .box__btn-add{
 	width: 253px;
 }
 
-.vector-links { /* отображение стрелок у ссылок */
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 
-}
 .wrapper__vector-links {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: space-between;
+	height: 44px;
 	
+}
+.presentation__wrapper__vector-links {
+	align-items: center;
 }
 
 .vector-wrapper {
@@ -305,7 +314,7 @@ label {
 	height: 1px;
 	background-color: #000;
 	width: 43px;
-	transform: translateX(7px);
+
 }
 
 .vector1-2 {
@@ -313,7 +322,7 @@ label {
 	border-bottom: 1px solid #000;
 	width: 6px;
 	height: 6px;
-	transform: rotate(-45deg);
+	transform: translateX(-7px) rotate(-45deg);
 }
 
 .scrooll-wrapper { /* иконка прокрутки - мышь  */
@@ -356,7 +365,7 @@ label {
 	display: flex;
 	justify-content: center;
 	height: 100%;	
- }
+}
 
 .product__wrapper-img {	
 	flex-direction: row;
@@ -379,10 +388,15 @@ label {
 	align-content: center;
 }
 
+.conteiner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 .product__box,
 .clot__box {
 	background-color: #fff;
-	margin-bottom: 39px;
 }
 
 .product__box__title {
@@ -394,17 +408,15 @@ label {
 }
 
 .box__subtitle {
-	margin:0 0 64px 0;
+	margin: 0;
+	margin-bottom: 64px;
 }
 
 .product__box__text {
 	width: 368px;
 	height: 147px;
-	margin: 0 0 38px 0;
-}
-
-.product__box__btn {
-	margin-left: 
+	margin: 0;
+	margin-bottom: 38px;
 }
 
 .parameter {
@@ -490,12 +502,13 @@ label {
 /* третий экран*/
 .clot {
 	flex-wrap: wrap;
-	height: calc(100vh-92px);/* высота экрана минус подвал */
+	height: calc(100vh - 92px);/* высота экрана минус подвал */
 	background: linear-gradient(to right, #EBE3D8 30%, #000 30%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
 }
 
 .clot__img {
 	content: url(../img/clot.png);
+	width: 100%;
 	transform: translateX(20%);
 }
 
@@ -523,6 +536,10 @@ label {
 	display: flex;
 	justify-content: flex-end;
 	width: 475px;
+}
+.clot__vector-links {
+	width: 100%;
+	justify-content: flex-end;
 }
 
 .vector3-1{
@@ -563,7 +580,8 @@ label {
 /* Portrait tablets and medium desktops */
 @media screen and  (max-width: 1024px) {
 	.presentation__img {
-		transform: translateX(20%);
+		transform: translateX(-10%);
+		width: 80%
 	}	
 	.present__box__title {
 		font-size: 50px;
@@ -579,7 +597,7 @@ label {
 	}
 
 	.clot__img {
-    transform: scale(.7) translateX(15%);
+    transform: scale(1.2) translateX(15%);
 	}
 }
 
@@ -643,10 +661,8 @@ label {
 	.present__box__text,
 	.box__btn,
 	.box__link,
-	.vector-wrapper,
 	.scrooll-wrapper,
-	.vector-links,
-	.link {
+	.wrapper__vector-links {
 		display: none;
 	}	
 
@@ -709,10 +725,7 @@ label {
 	width: 23.35px;
 height: 22.89px;
 }
-.parameter__color-pink {
-width: 29.39px;
-height: 29px;
-}
+
 .parameter__color-green {
 	margin-right: 60px;
 }
@@ -749,8 +762,11 @@ font-size: 20px;
 		display: none;
 	}
 .bag-pink {
-	    transform: translate(0, 40px);
-}
+	transform: scale(1) translate(0);
+	}
+	.btn {
+		height: 37px;
+	}
 
 	.count,
 	.product__link {
@@ -759,4 +775,57 @@ font-size: 20px;
 	.box__btn-add {
 		width: 100%;
 	}
+	.clot {
+	background: linear-gradient(to right, #EBE3D8 25%, #000 25%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
+
+	height: 100vh;/* высота экрана минус подвал */
+	
+}
+.clot__left-content {
+	height: 50%;
+}
+	.clot__img {
+    transform: scale(.8) translateY(20%);
+    align-self: flex-start;
+	}
+	.clot__right-content{
+		width: 100%;
+	}
+	.clot__box{
+		padding: 25px;
+		margin-bottom: 10vw;
+	}
+
+	.clot__link {
+		line-height: normal;
+	}
+.clot__vector-links {
+	align-self: flex-end;
+	display: block;
+	width: 50%;
+}
+.vector3-1 {
+    width: 141px;
+}
+.footer {
+	padding: 0 10px 10px 0;
+	background: linear-gradient(to right, #EBE3D8 25%, #000 25%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
+}
+.footer__dev {
+	margin-right: 5px;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+.footer__whs {	
+	display: flex;
+	transform: translateY(-1px);
+}
+
+.footer__webhero {
+	font-size: 10px;
+	
+}
+.footer__shcool {
+	font-size: 8px;
+}
 }
