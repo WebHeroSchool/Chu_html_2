@@ -19,7 +19,8 @@ body {
 	width: 32%;
 }
 
-.header__left-content__wrapper {
+.header__wrapper {
+	width: 100%;
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
@@ -29,7 +30,7 @@ body {
 	padding: 0 24px 0 52px;
 }
 
-.header__logo {
+.logo {
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
@@ -38,7 +39,7 @@ body {
 	letter-spacing: 0.07em;
 }
 
-.header__lang {
+.lang {
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
@@ -47,7 +48,7 @@ body {
 	align-items: center;
 }
 
-.lang-around {
+.lang__around_item {
 	border-right: 1px solid #fff;
 	border-bottom: 1px solid #fff;
 	width: 6px;
@@ -68,7 +69,7 @@ body {
 }
 
 /*Меню основное*/
-.header__menu {
+.menu {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -82,11 +83,11 @@ body {
     z-index: 1000;
 }
 
-#header__menu-icon{
+#menu-icon{
     display: none;
 }
 
-.header__menu-icon {
+.menu-icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -123,7 +124,7 @@ label {
 	transform: translateY(-10px);
 }
 
-.header__menu__links{
+.menu__links{
     display: block;
     position: absolute;
     width:300px;
@@ -137,7 +138,7 @@ label {
     background-color: rgba(0,0,0,.05);
 }
 
-.header__menu__links-item{
+.menu__links_item{
     display: block;
     width: 100%;
     padding: 10px;
@@ -145,31 +146,31 @@ label {
     text-decoration: none;
 }
 
-.header__menu__links-item:hover {
+.menu__links_item:hover {
     background-color: rgba(0,0,0,.1);
 }
 
-#header__menu-icon:checked ~ .header__menu__links {
+#menu-icon:checked ~ .header__menu__links {
     max-height: 500px;
     font-size: 16px;
     display: block;
 }
 
-#header__menu-icon:checked ~ .burger-line--first {
+#menu-icon:checked ~ .burger-line--first {
     display: none;   
 }
 
-#header__menu-icon:checked ~ .burger-line--second {
+#menu-icon:checked ~ .burger-line--second {
    transform: rotate(-45deg) translate(0px, 1.47px);
     display: block;
 }
 
-#header__menu-icon:checked ~ .burger-line--third {
+#menu-icon:checked ~ .burger-line--third {
     transform: rotate(45deg) translate(0px, -1.47px);
     display: block;
 }
 
-#header__menu-icon:checked ~ .burger-line--fourth {
+#menu-icon:checked ~ .burger-line--fourth {
      display: none;
 }
 
@@ -219,7 +220,7 @@ label {
 	margin-right: 12px;
 }
 
-.right-content__presentaion { /* правая часть первого экрана */
+.presentaion__right-content { /* правая часть первого экрана */
 	height: 100%;
 	flex-wrap: wrap;
 	align-items: flex-end;
@@ -237,13 +238,13 @@ label {
 }
 
 .box__title {
-	margin: 0;
+	margin: 0 0 17px 0;
 	font-weight: 700;
 	line-height: 41px;
 	font-size: 40px;
 }
 
-.present__box__title {
+.box__title_present {
 	font-size: 80px;
 	margin-bottom: 26px;
 	line-height: 82px;
@@ -256,6 +257,7 @@ label {
 	font-size: 15px;
 	max-width: 467px;
 }
+
 
 .btn {
 	color: #000;
@@ -293,19 +295,19 @@ label {
 	justify-content: space-between;
 
 }
-
-.box__btn-add{
-	width: 253px;
-}
-
-.wrapper__vector-links {
+.vector-links__wrapper {
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
 	height: 44px;
 }
+.box__btn-add{
+	width: 253px;
+}
 
-.presentation__wrapper__vector-links {
+
+
+.vector-links__wrapper_presentation {
 	align-items: center;
 }
 
@@ -329,7 +331,7 @@ label {
 	transform: translateX(-7px) rotate(-45deg);
 }
 
-.scrooll-wrapper { /* иконка прокрутки - мышь  */
+.scrooll { /* иконка прокрутки - мышь  */
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -337,14 +339,14 @@ label {
 	width: 100%;
 }
 
-.scrooll {
+.scrooll__icon {
 	border: 2px solid #000;
 	border-radius: 15px;
 	width: 27px;
 	height: 46px;
 }
 
-.roll {
+.scrooll__item {
 	width: 2.45px;
 	height: 8.21px;
     background: #000;
@@ -359,7 +361,7 @@ label {
 	height: 100vh;
 }
 
-.product__left-content {
+.left-content__product {
 	align-items: center;
 	justify-content: center;
 }
@@ -392,7 +394,7 @@ label {
 	align-content: center;
 }
 
-.conteiner {
+.conteiner-for-box {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -404,10 +406,6 @@ label {
 	background-color: #fff;
 }
 
-.product__box__title {
-	margin-bottom: 17px;
-}
-
 .text-opacity {
 	opacity: 0.5;
 }
@@ -417,7 +415,7 @@ label {
 	margin-bottom: 64px;
 }
 
-.product__box__text {
+.box__text_product {
 	width: 368px;
 	height: 147px;
 	margin: 0;
@@ -465,7 +463,7 @@ label {
 	background: #90BD8F;
 }
 
-.price {
+.parameter__price {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
@@ -473,11 +471,11 @@ label {
 	font-size: 40px;
 }
 
-.count_wrapper {
+.count {
 	display: flex;
 }
 
-.count {
+.count__wrapper {
 	border: 2px solid #000;
 	display: flex;
 	justify-content: space-around;
@@ -531,7 +529,6 @@ label {
 
 .clot__box__text {
 	height: 101px;
-	margin-bottom: 17px;
 }
 
 .clot__parameter {
@@ -596,7 +593,7 @@ label {
 		transform: translateX(-10%);
 		width: 80%
 	}	
-	.present__box__title {
+	.box__title_present {
 		font-size: 50px;
 		line-height: 51px;
 	}
@@ -641,7 +638,7 @@ label {
 		padding: 0;
 	}
 
-	.header__menu {
+	.menu {
 		height: 70px;
 		width: 70px;
 	}
@@ -660,13 +657,13 @@ label {
 		align-items: center;
 	}
 
-	.scrooll-wrapper {
+	.scrooll {
 		height: 70px;
 		padding-left: 8vw;
 		align-items: flex-start;
 	}
 
-	.scrooll {
+	.scrooll__icon {
 		transform: scale(0.8);
 	}
 
@@ -674,7 +671,7 @@ label {
     	padding: 30px;
 	}
 
-	.product__box__title {
+	.box__title {
 		margin: 0;
 	}
 
@@ -682,14 +679,14 @@ label {
 		margin-bottom: 16px;
 	}
 
-	.product__box__text {
+	.box__text_product {
    		margin-bottom: 12px;
 	}
 	.parameter {
 		margin-bottom: 12px;
 		
 	}
-	.wrapper__vector-links {
+	.vector-links__wrapper {
 	    align-items: center;
 	} 
 	.vector2-1 {
@@ -703,18 +700,18 @@ label {
     	width: 50%;
 	}
 
- 	.header__left-content__wrapper {
+ 	.header__wrapper {
  		color: #000;
 	    padding: 0 0 0 24px;
 	    background-color: #fff;
 	    width: 100%;
 	}
 	
- 	.lang-name {
+ 	.lang__name {
 		display: none;
 	}	
 	
-	.header__menu__links {
+	.menu__links {
     	min-width: 100vw;
 	}
 
@@ -731,11 +728,11 @@ label {
 		display: none;
 	}
 
-	.present__box__text,
-	.box__btn,
+	.box__text_present,
+	.vector-links__btn,
 	.box__link,
-	.scrooll-wrapper,
-	.wrapper__vector-links {
+	.scrooll,
+	.vector-links__wrapper {
 		display: none;
 	}	
 
@@ -750,18 +747,18 @@ label {
         align-items: flex-start;
 	}
 
-	.present__box__title {/* не могу сдвинуть на центр. в чет проблема?*/
+	.box__title_present {/* не могу сдвинуть на центр. в чет проблема?*/
 		width: 80%;
 		line-height: 81px;
 		font-size: 80px;
 		margin-bottom: 0;	
 	}
 
-	.around-wrapper {
+	.lang__around {
 		transform: translateY(90vh);/* костыль, чтоб на разныч телефонах на месте было*/
 	}
 
-	.lang-around {
+	.lang__around_item {
 	    border-right: 1px solid #000;
 	    border-bottom: 1px solid #000;
 	    width: 15px;
@@ -774,7 +771,7 @@ label {
 		transform: scale(0.7);
 	}
 
-	.product__box__title {
+	.box__title {
 		margin-bottom: 10px;
 	}
 
@@ -799,7 +796,7 @@ label {
 		margin-right: 60px;
 	}
 
-	.price {
+	.parameter__price {
 		line-height: 28px;
 		font-size: 20px;
 	}
@@ -841,7 +838,7 @@ label {
 		height: 37px;
 	}
 
-	.count,
+	.count__wrapper,
 	.product__link {
 		display: none;
 	}
@@ -855,22 +852,11 @@ label {
 	height: 100vh;/* высота экрана минус подвал */
 	}
 
-	.clot__left-content {
-		height: 50%;
-	}
+
 
 	.clot__img {
     transform: scale(.8) translateY(20%);
     align-self: flex-start;
-	}
-
-	.clot__right-content{
-		width: 100%;
-	}
-
-	.clot__box{
-		padding: 25px;
-		margin-bottom: 10vw;
 	}
 
 	.clot__link {
@@ -921,7 +907,7 @@ label {
         align-items: center;
 	}
 
-	.present__box__title {/* не могу сдвинуть на центр. в чет проблема?*/
+	.box__title_present {/* не могу сдвинуть на центр. в чет проблема?*/
 		width: 80%;
 		line-height: 41px;
 		font-size: 40px;
@@ -932,7 +918,7 @@ label {
 		transform: scale(0.5);
 	}
 
-	.product__box__title {
+	.box__title {
 		font-size: 20px;
 		line-height: 20px;
 		margin: 0;
@@ -945,7 +931,7 @@ label {
 		letter-spacing: 0.07em;
 	}
 
-	.product__box__text {
+	.box__text_product {
 	    margin-bottom: 12px;
 	    line-height: 13px;
 		font-size: 9px;
