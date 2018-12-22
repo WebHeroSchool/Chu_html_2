@@ -422,7 +422,7 @@ label {
 	margin-bottom: 38px;
 }
 
-.parameter {
+.box__parameter {
 	height: 57px;
 	display: flex;
 	align-items: center;
@@ -430,40 +430,40 @@ label {
 	margin-bottom: 46px;
 }
 
-.parameter-wrapper {
+.box__parameter_wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.parameter__color {
+.box__parameter_color {
 	border-radius: 50%;
 	width: 30.18px;
 	height: 30px;
 	margin-right: 12px;	
 }
 
-.parameter__color:hover {
+.box__parameter_color:hover {
 	transform: scale(1.25);
 }
 
-.parameter__color-gray {
+.box__parameter_color-gray {
 	background: #DEDEDE;
 }
 
-.parameter__color-pink{
+.box__parameter_color-pink{
 	background: #F29F9F;
 }
 
-.parameter__color-blue {
+.box__parameter_color-blue {
 	background: #A8BFF9;
 }
 
-.parameter__color-green {
+.box__parameter_color-green {
 	background: #90BD8F;
 }
 
-.parameter__price {
+.box__parameter_price {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
@@ -682,7 +682,7 @@ label {
 	.box__text_product {
    		margin-bottom: 12px;
 	}
-	.parameter {
+	.box__parameter {
 		margin-bottom: 12px;
 		
 	}
@@ -783,20 +783,16 @@ label {
     	margin-bottom: 12px;
 	}
 
-	.parameter {
-		margin-bottom: 12px;
-	}
-
-	.parameter__color {
+	.box__parameter_color {
 		width: 23.35px;
 		height: 22.89px;
 	}
 	
-	.parameter__color-green {
+	.box__parameter_color-green {
 		margin-right: 60px;
 	}
 
-	.parameter__price {
+	.box__parameter_price {
 		line-height: 28px;
 		font-size: 20px;
 	}
