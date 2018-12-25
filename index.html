@@ -8,74 +8,71 @@
   </head>
   <body>
     <header class="header">  
-      <div class="header__left-side">
-          <span class="header__logo">LOCO</span>
+      <div class="header__left-side left-side">
+        <span class="header__logo">LOCO</span>
 <!--  выбор языка  --> 
-          <div class="header__lang">
-            <div class="header__lang_name">RU</div>
-
-            <div class="header__around">
-              <div class="header__around-item"></div>
-            </div>
-            
-          </div>
+        <div class="header__lang ">
+          <div class="header__lang-box">RU</div>
+            <div class="header-lang__arrow arrow-box">
+              <div class="arrow-box__arrow"></div>
+            </div>            
         </div>
       </div>
-      <div class="header__right-side">
+      <div class="right-side header__right-side">
 <!--основное меню-->
-        <div class="menu">
-          <input type="checkbox" class="menu__icon" id="menu__icon">  <label  for="menu__icon"></label>
-          <span class="menu__burger-line menu__burger-line--first"></span>
-          <span class="menu__burger-line menu__burger-line--second"></span>
-          <span class="menu__burger-line menu__burger-line--third"></span>
-          <span class="menu__burger-line menu__burger-line--fourth"></span>          
-          <nav class="menu__links">
-            <a class="menu__links_item">пункт меню 1</a>
-            <a class="menu__links_item">пункт меню 2</a>
+        <div class="header__menu">
+          <input type="checkbox" class="header__menu-icon" id="header__menu-icon">
+          <label  for="header__menu-icon"></label>
+          <span class="header__menu-line header__menu-line--first"></span>
+          <span class="header__menu-line header__menu-line--second"></span>
+          <span class="header__menu-line header__menu-line--third"></span>
+          <span class="header__menu-line header__menu-line--fourth"></span>
+          <nav class="header__menu-links">
+            <a class="header__menu-item">пункт меню 1</a>
+            <a class="header__menu-item">пункт меню 2</a>
           </nav>
         </div>     
       </div>
     </header>
 <!-- первый экран -->
-    <section class="floor floor-1st">
-      <div class="left-content left-content_visile">
-        <div class="left-content__wrapper-img left-content__wrapper-img_height">
-          <img class="left-content__img left-content__img_girl" alt="LOCO for Girl">  
+    <section class="page page--theme--1st">
+      <div class="page__left-side left-side">
+        <div class="page__wrapper-img page__wrapper-img--height">
+          <img class="page__img page__img--theme--girl" alt="LOCO for Girl"> 
         </div> 
 <!--coциальные сети-->
-        <div class="social">
+        <div class="page__social social">
           <div class="social__wrapper">
-            <a href="#" class="social__item social__item_instagram">
+            <a href="#" class="social__item">
               <img src="img/instagram.svg" title="Страничка Loco в instagram" alt="loco instagram">
             </a>
-            <a href="#" class="social__item social__item_vk">
+            <a href="#" class="social__item">
               <img src="img/vcontacte.svg" title="Страничка Loco в VK" alt="loco in VK">
             </a>
-            <a href="#" class="social__item social__item_fb">
+            <a href="#" class="social__item">
               <img src="img/facebook.svg" title="Страничка Loco  FB" alt="loco in FB">
             </a>            
           </div>
         </div>       
       </div>
-      <div class="right-content right-content_background"> 
-    <div class="box__wrapper-internal wrapper-internal">  
-        <div class="box box_width box_location">
-          <h1 class="box__title box__title_size">Новая коллекция</h1>
-          <p class="box__text box__text_width box__text_visible">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
-          <div class="vector-links vector-links_visible">
-              <button class="vector-links__btn btn">читать дальше</button>
-              <!-- ссылки и стрелки ссылок -->
-              <div class="vector-links__wrapper">
-                <a href="#" class="link">Другие предложения </a>
-                <div class="vector-links__vector"> 
-                  <div class="vector-links__vector-item--1-1"></div>
-                  <div class="vector-links__vector-item--1-2"></div>
+      <div class="page__right-side right-side"> 
+        <div class="page__wrapper-box page__wrapper-box--height">  
+          <div class="page__block-box block-box">
+            <h1 class="block-box__title box__title--size--l">Новая коллекция</h1>
+            <p class="block-box__text">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+            <div class="block-box__wrap-links">
+              <button class="block-box__btn btn">читать дальше</button>
+              <div class="block-box__vector vector">
+                <a href="#" class="vector__link link">Другие предложения </a>
+                <div class="vector__wrap-items"> 
+                  <div class="vector__item1"></div>
+                  <div class="vector__item2"></div>
                 </div>
               </div>  
-          </div>  
-        </div> 
+            </div>  
+          </div> 
         </div>
-        <div class="scrooll">
+        <div class="page__scrool scrooll">
          <div class="scrooll__wrapper">
             <div class="scrooll__roll"></div>
          </div>
@@ -83,91 +80,85 @@
       </div>
     </section>
 <!-- второй экран -->
-    <section class="floor floor-2nd"> 
-      <div class="left-content">
-<!-- обёртка для изображений --> 
-        <div class="left-content__wrapper-img left-content__wrapper-img_direction">
-          <img class="left-content__img left-content__img_bag--gray" title="LOCO bag" alt="Кожанный клатч LOCO">
-          <img class="left-content__img left-content__img_bag--pink" title="LOCO bag" alt="Кожанный клатч LOCO">
+    <section class="page page--theme--2nd"> 
+      <div class="page__left-side left-side">
+        <div class="page__wrapper-img page__wrapper-img--direction--row">
+          <img class="page__img page__img--theme--bag-gray" title="LOCO bag" alt="Кожанный клатч LOCO">
+          <img class="page__img page__img--theme--bag-pink" title="LOCO bag" alt="Кожанный клатч LOCO">
         </div>
       </div>
-      <div class="right-content">
-       <div class="wrapper-internal">        
-          <div class="box box_background-color--white box_width--s">
-            <h1 class="box__title">Кожанный клатч</h1>
-            <h2 class="box__subtitle text-opacity">осенняя коллекция</h2>
+      <div class="page__right-side right-side">
+       <div class="page__wrapper-box page__wrapper-box--direction">      
+          <div class="page__block-box block-box block-box--background--white block-box--widht">
+            <h1 class="block-box__title">Кожанный клатч</h1>
+            <h2 class="block-box__subtitle text-opacity">осенняя коллекция</h2>
             <p class="box__text box__text_width--s text-opacity">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
-  <!-- выбор цвета -->
-            <div class="parameter">
-              <div class="parameter__wrapper">
-                <div class="parameter__color parameter__color--gray"></div>
-                <div class="parameter__color parameter__color--pink"></div>
-                <div class="parameter__color parameter__color--blue"></div>
-                <div class="parameter__color parameter__color--green"></div>
+            <div class="block-box__parameter">
+              <div class="block-box__parameter-items">
+                <div class="block-box__item block-box__item--color--gray"></div>
+                <div class="block-box__item block-box__item--color--pink"></div>
+                <div class="block-box__item block-box__item--color--blue"></div>
+                <div class="block-box__item block-box__item--color--green"></div>
               </div>
-              <span class="parameter__price">1990₽</span>
+              <span class="block-box__price">1990₽</span>
             </div>                 
-              <div class="counter">
-    <!--выбор количества-->
-                <div class="counter__wrapper">
-                  <button class="btn counter__btn">-</button>
-                  <span class="btn counter__btn">1</span> 
-                  <button class="btn counter__btn">+</button>
-                </div>
-                <button class="btn box__btn-add">добавить в корзину</button>
+            <div class="block-box__counter">
+              <div class="block-box__counter-items">
+                <button class="block-box__counter-btn btn ">-</button>
+                <span class="block-box__counter-btn btn">1</span> 
+                <button class="block-box__counter-btn btn">+</button>
               </div>
-            </div>       
-<!-- ссылки и стрелки ссылок -->
-          <div class="vector-links__wrapper vector-links__wrapper_width vector-links__wrapper_visible">
-            <a href="#" class="link">Другие предложения </a>
-            <div class="vector-links__vector"> 
-              <div class="vector-links__vector-item--1-1 vector-links__vector-item--2-1"></div>
-            <div class="vector-links__vector-item--1-2"></div>
+              <button class="btn box__btn-add">добавить в корзину</button>
             </div>
-          </div> 
+          </div>
+          <div class="page__vector vector vector--width">
+          <a href="#" class="vector__link link">Другие предложения </a>
+            <div class="vector__wrap-items "> 
+              <div class="vector__item1 vector__item1--width"></div>
+            <div class="vector__item2"></div>
+          </div>
+        </div>
         </div>
       </div>     
     </section>
 <!-- третий экран -->
-    <section class="floor floor-3rd"> 
-      <div class="left-content">
+    <section class="page page--theme--3rd"> 
+      <div class="page__left-side">
 <!-- обёртка для изображений --> 
-        <div class="left-content__wrapper-img">
-          <img class="left-content__img left-content__img_clot" title="Одежда от LOCO" alt="Одежда от LOCO">
+        <div class="page__wrapper-img">
+          <img class="page__img page__img--theme--clot" title="Одежда от LOCO" alt="Одежда от LOCO">
         </div>
       </div>
-      <div class="right-content">
-        <div class="wrapper-internal"> 
-          <div class="box box_width--s box_color--pink">
-            <h1 class="box__title box__subtitle_visual">Serene Total Look</h1>
-            <h2 class="box__subtitle text-opacity">осенняя коллекция</h2>
-            <p class="box__text box__text_visual text-opacity">Джинсы, свитер, обувь.<br> В комплект также входит пакет ароматного чая и кружка.</p>
+      <div class="page__right-side right-side">
+        <div class="page__wrapper-box page__wrapper-box--direction"> 
+          <div class="page__block-box block-box block-box--background--pink block-box--widht">
+            <h1 class="block-box__title">Serene Total Look</h1>
+            <h2 class="block-box__subtitle text-opacity">осенняя коллекция</h2>
+            <p class="block-box__text box__text_visual text-opacity">Джинсы, свитер, обувь.<br> В комплект также входит пакет ароматного чая и кружка.</p>
     <!-- выбор цвета -->
-            <div class="parameter parameter_visible">
-              <div class="parameter__wrapper">
-                <div class="parameter__color parameter__color--gray"></div>
-                <div class="parameter__color parameter__color--pink"></div>
-                <div class="parameter__color parameter__color--blue"></div>
-                <div class="parameter__color parameter__color--green"></div>
+            <div class="block-box__parameter block-box__parameter--visibilty">
+              <div class="block-box__parameter-items">
+                <div class="block-box__item block-box__item--color--gray"></div>
+                <div class="block-box__item block-box__item--color--pink"></div>
+                <div class="block-box__item block-box__item--color--blue"></div>
+                <div class="block-box__item block-box__item--color--green"></div>
               </div>
-              <span class="parameter__price">1990₽</span>
+              <span class="block-box__price">1990₽</span>
             </div>                 
-              <div class="counter">
-    <!--выбор количества-->
-                <div class="counter__wrapper">
-                  <button class="btn counter__btn">-</button>
-                  <span class="btn counter__btn">1</span> 
-                  <button class="btn counter__btn">+</button>
-                </div>
-                <button class="btn box__btn-add">добавить в корзину</button>
+            <div class="block-box__counter">
+              <div class="block-box__counter-items">
+                <button class="block-box__counter-btn btn ">-</button>
+                <span class="block-box__counter-btn btn">1</span> 
+                <button class="block-box__counter-btn btn">+</button>
               </div>
-            </div>       
-<!-- ссылки и стрелки ссылок -->
-          <div class="vector-links__wrapper vector-links__wrapper_width vector-links__wrapper_location">
-            <a href="#" class="link">Другие товары на LOCO.COM </a>
-            <div class="vector-links__vector"> 
-              <div class="vector-links__vector-item--1-1 vector-links__vector-item--3-1"></div>
-            <div class="vector-links__vector-item--1-2"></div>
+              <button class="btn box__btn-add">добавить в корзину</button>
+            </div>
+          </div>
+          <div class="page__vector vector vector--width vector--justify">
+          <a href="#" class="vector__link link">Другие предложения </a>
+            <div class="vector__wrap-items "> 
+              <div class="vector__item1 vector__item1--width--s"></div>
+            <div class="vector__item2"></div>
             </div>
           </div> 
         </div>
