@@ -43,7 +43,7 @@ body {
 	letter-spacing: 0.07em;
 }
 
-.header__lang {
+.header__lang-box {
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
@@ -707,14 +707,27 @@ and (orientation: portrait) {
 	.header__left-side {
 		background: #fff;	
 		align-items: center;
+		width: 50%;
+	}
+	 .right-side {
+    	width: 100%;
+    }
+	.header__right-side {
+		width: 50%;
 	}
 	.header__logo {
 		padding-left: 26px;
 	}
-
-	.header__lang-box { 
-		display: none;
+	.header__lang-box {
+		padding: 0;
 	}
+	.arrow-box__arrow {
+		border-color: #000;
+		height: 15px;
+		width: 15px;
+		transform: translateY(85vh) rotate(45deg);
+	}
+
 	.header__menu {
 		height: 70px; 
 		width: 70px;
@@ -730,13 +743,7 @@ and (orientation: portrait) {
 	.page--theme--1st {
  	   height: calc(100vh - 70px);
 	}
-	
-    .left-content {
-    	width: 100%;
-    }
-    .right-side {
-    	width: 100%;
-    }
+   
     .page__right-side {
 	    justify-content: center;
 	}
@@ -750,6 +757,7 @@ and (orientation: portrait) {
 	}
  
 	.left-content--visile,
+	.header__lang,
 	.scrooll,
 	.block-box__text--visible,
 	.block-box__wrap-links--visible,
