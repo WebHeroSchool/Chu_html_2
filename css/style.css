@@ -97,6 +97,7 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
 label {
    position: absolute;
     width: 92px;
@@ -167,10 +168,12 @@ label {
    transform: rotate(-45deg) translate(0px, 1.47px);
     display: block;
 }
+
 #header__menu-icon:checked ~ .header__menu-line--third {
     transform: rotate(45deg) translate(0px, -1.47px);
     display: block;
 }
+
 #header__menu-icon:checked ~ .header__menu-line--fourth {
      display: none;
 }
@@ -191,10 +194,10 @@ label {
 	background: #fff linear-gradient(to right, #000 32%, #fff 32%, #fff 100%);
 	height: calc(100vh - 92px);
 }
+
 .page__left-side {/* .page__left-side--wrap*/
 	flex-wrap: wrap;
 }
-
 
 .page__wrapper-img {
 	display: flex;
@@ -211,9 +214,9 @@ label {
 .page__img {
 	width: 100%;
 }
+
 .page__img--theme--girl {
 	transform: translateX(15%);
-	content: url(../img/loco-girl.png);	
 	width: 70%;
 }
 
@@ -225,6 +228,7 @@ label {
 	align-items: center;
 	justify-content: flex-start;
 }
+
 .page__social {
 	margin-left: 52px;
 }
@@ -236,9 +240,11 @@ label {
 .social__item {
 	margin-right: 12px;
 }
+
 .page__right-side {
 	flex-wrap: wrap;
 }
+
 .page__wrapper-box {
 	display: flex;
 	flex-direction: column;
@@ -247,6 +253,7 @@ label {
 	max-width: 480px;
 	height: 100%;
 }
+
 .page__wrapper-box--height {
 	height: calc(100% - 92px);
 }
@@ -310,12 +317,13 @@ label {
 	text-transform: uppercase;
 	height: 44px;
 	border: none;
-
 }
+
 .block-box__link {
 	border: 2px solid #000;
 	padding: 0 20px;
 }
+
 .block-box__wrap-links { /* отображение стрелок у ссылок */
 	display: flex;
 	width: 100%;
@@ -334,9 +342,11 @@ label {
 	height: 44px;	
 	width: 100%;
 }
+
 .block-box__vector {
 	width: auto;
 }
+
 .vector__link{
 	margin-right: 10px;
 }
@@ -400,13 +410,11 @@ label {
 }
 
 .page__img--theme--bag-gray{
-	content: url(../img/bag-gray.png);
 	transform: translateX(60%);
 	width: 100%;
 }
 
 .page__img--theme--bag-pink {
-	content: url(../img/bag-pink.png);
 	transform: translateX(-10%);
 	width: 100%;
 }
@@ -432,6 +440,7 @@ label {
 	margin-bottom: 46px;
 	width: 100%;
 }
+
 .block-box__parameter-items {
 	display: flex;
 	align-items: center;
@@ -512,10 +521,10 @@ label {
 }
 
 .page__img--theme--clot {
-	content: url(../img/clot.png);
 	transform: translateX(15%);
 	width: 100%;
 }
+
 .block-box--background--pink {
 	background: #FAE8E4;
 }
@@ -523,17 +532,20 @@ label {
 .block-box__text_visual {
 	height: 101px;
 	margin-bottom: 17px;
-
 }
+
 .box__subtitle_visual {
 	margin-bottom: 35px;
 }
+
 .block-box__parameter--visibilty {
 	display: none;
 }
+
 .vector__item1--width--s {
 	width: 95px;
 }
+
 .vector--justify {
 	justify-content: flex-end;
 }
@@ -551,6 +563,7 @@ label {
 	text-transform: uppercase;
 	font-size: 12px;
 }
+
 .footer__whs {	
 	display: flex;
 	flex-direction: column;
@@ -570,14 +583,12 @@ label {
 	letter-spacing: 0.01em;
 }
 
-
-
-
 @media screen and (max-width: 1024px) {
 	.block-box__title--size--l {
     	font-size: 66px;
     	line-height: 62px;
     }
+
 	.page__img--theme--girl {
 		transform: translateX(0%);
 	}
@@ -595,6 +606,7 @@ label {
 	    width: 120%;
 	    transform: translateX(15%);
 	}
+
 	.page__right-side {
 		justify-content: flex-start;
 	}
@@ -606,13 +618,16 @@ label {
 	}
 	.block-box__link {
 		padding: 0 10px;
-	}.block-box__title {
+	}
+
+	.block-box__title {
 		margin-bottom: 5px;
 	}	
 
 	.block-box__subtitle {
 		margin-bottom: 16px;
 	}
+
 	.block-box__text {
 		margin-bottom: 10px;
 	}
@@ -621,7 +636,6 @@ label {
 		margin-bottom: 10px;
 	}
 } 
-
 
 /*iPads-pro (portrait and portrait) ----------- */
 @media only screen
@@ -632,30 +646,35 @@ and (orientation: portrait) {
     transform: translate(15%, 15%);
     width: 100%;
 	}
+
 	.page__wrapper-img {
 		align-items: flex-start;
 	}
+
 	.block-box {
 		align-self: flex-end;
 		transform: translate(-5%, -15%);
 	}
-	.page__img--theme--bag-gray {
-	    transform: translate(70%, 40%);	}
 
+	.page__img--theme--bag-gray {
+	    transform: translate(70%, 40%);
+	}
 
 	.page__img--theme--bag-pink {
 	    transform: translateX(0%);
 	}
+
 	.page__wrapper-box {
    		justify-content: flex-end;
    	}
+
    	.vector--width { /* для эксперимента*/
 		margin-bottom: 70px;
 	}
+
 	.page__img--theme--clot {
 	    transform: translate(15%, 35%);
-	}
-	
+	}	
 }
 
 /*iPads (portrait and portrait) ----------- */
@@ -667,65 +686,72 @@ and (orientation: portrait) {
     transform: translate(15%, 15%);
     width: 100%;
 	}
+
 	.page__wrapper-img {
 		align-items: flex-start;
 	}
 	
 	.page__img--theme--bag-gray {
-	    transform: translate(70%, 30%);	}
-
+	    transform: translate(70%, 30%);
+	}
 
 	.page__img--theme--bag-pink {
 	    transform: translateX(0%);
 	}
+
 	.page__wrapper-box {
    		justify-content: flex-end;
    		transform: translateX(-20%);
    	}
+
    	.block-box__text {
 		background-color: #fff;
 	}
+
    	.vector--width { /* для эксперимента*/
 		margin-bottom: 70px;
 		width: 450px;
 	}
+
 	.page__img--theme--clot {
 	    transform: translate(15%, 35%);
 	    width: 130%;
 	}
-
 }
-
-
-
 
 @media screen and (max-width: 764px){
 	.header{
 		height: 70px;
 		color: #000;
 	}
+
 	.header__left-side {
 		background: #fff;	
 		align-items: center;
 		width: 50%;
 	}
+
 	 .right-side {
     	width: 100%;
     }
+
 	.header__right-side {
 		width: 50%;
 	}
+
 	.header__logo {
 		padding-left: 26px;
 	}
+
 	.header__lang-box {
 		padding: 0;
 	}
+
 	.arrow-box__arrow {
 		border-color: #000;
 		height: 15px;
 		width: 15px;
-		transform: translateY(85vh) rotate(45deg);
+		transform: translateY(90vh) rotate(45deg);
 	}
 
 	.header__menu {
@@ -737,9 +763,19 @@ and (orientation: portrait) {
 	    width: 70px;
 	    height: 70px;
 	}
+
+	.header__menu-links {
+		width: 100%;
+	}
+
+	.header__menu-item {
+		text-align: center;
+	}
+
 	.page {
 		flex-direction: column;
 	}
+
 	.page--theme--1st {
  	   height: calc(100vh - 70px);
 	}
@@ -750,8 +786,8 @@ and (orientation: portrait) {
 
 	 .page__right-side--position--start {
 	    justify-content: flex-start;
-
 	}
+
 	.page__wrapper-box--pos--end {
 		justify-content: flex-end;
 	}
@@ -772,9 +808,11 @@ and (orientation: portrait) {
 		background-image: url(../img/loco-girl-2.png);
 		background-size: cover;
 	}
+
 	.page__wrapper-box {
 		max-width: 450px;
 	}
+
 	.block-box {
 		padding: 30px;
 	}
@@ -792,21 +830,23 @@ and (orientation: portrait) {
 	.page__img--theme--bag-pink {
     	transform: translateX(0%);
 	}
+
 	.page__img--theme--clot {
   		transform: translateX(0%);
   		align-self: flex-end;
 	}
+
 	.link {
 		line-height: 20px;
-
 	}
+
 	.vector--rows { /* чтобы стало в три строчки*/
     	display: block;
     	width: 150px;
     	align-self: flex-end;
 	}
-	
 }
+
 @media only screen
 	and (max-width:764px) 
 	and (orientation:landscape) {
@@ -818,11 +858,12 @@ and (orientation: portrait) {
 		background-repeat: no-repeat;
 		background-size: 68%;
 		background-position: right 24%;
-
 	}
+
 	.page--theme--1st {
     	background: #fff;
     }
+
     .block-box {
 		padding: 15px 20px;
 	}
@@ -830,11 +871,13 @@ and (orientation: portrait) {
 	.page__wrapper-box {
 	    max-width: 320px;
 	}
+
 	.block-box__title {
 		font-size: 30px;
 		line-height: 30px;
 		margin-bottom: 0;
 	}
+
 	.block-box__title--size--l{
 		font-size: 50px;	   
 	    line-height: 71px;
@@ -844,10 +887,12 @@ and (orientation: portrait) {
 	    line-height: 13px;
 		font-size: 10px;
 	}
+
 	.block-box__parameter {
 	    height: 30px;	
 	}
-		.block-box__price {
+
+	.block-box__price {
 		line-height: 30px;
 	    font-size: 30px;
 	}
@@ -856,6 +901,7 @@ and (orientation: portrait) {
 	    transform: translateX(20%);
 	    align-self: center;
 	}
+
 	.vector--flex-wrap {
     	flex-wrap: wrap;
     }
@@ -872,6 +918,7 @@ and (orientation: portrait) {
 		font-size: 20px;
 		line-height: 20px;
 	}
+
 	.block-box__title--size--l{
 		font-size: 50px;	   
 	    line-height: 51px;
@@ -882,6 +929,7 @@ and (orientation: portrait) {
 		font-size: 10px;
 		letter-spacing: 0.07em;
 	}
+
 	.block-box__text {
 	    line-height: 13px;
 		font-size: 9px;
@@ -896,6 +944,7 @@ and (orientation: portrait) {
 		height: 29px;
 		width: 29px;
 	}
+
 	.block-box__price {
 		line-height: 28px;
 		font-size: 20px;
@@ -905,15 +954,18 @@ and (orientation: portrait) {
 		background: linear-gradient(to right, #EBE3D8 25%, #000 25%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
 		height: 100vh;
 	}
+
 	.footer {
 		padding: 0 10px 10px 0;
 		background: linear-gradient(to right, #EBE3D8 25%, #000 25%, #000 35%, #EBE3D8 35%, #EBE3D8 100%);
 	}
+
 	.footer__dev {
 		margin-right: 5px;
 		text-transform: uppercase;
 		font-size: 10px;
 	}
+
 	.footer__whs {	
 		display: flex;
 		transform: translateY(-1px);
@@ -921,65 +973,9 @@ and (orientation: portrait) {
 
 	.footer__webhero {
 		font-size: 10px;
-		
 	}
+
 	.footer__shcool {
 		font-size: 8px;
-	}
-}
-
-/*
-@media 
-	and (min-width: 320px) 
-	and (max-width:780px) 
-	and (orientation:landscape) {
-	.page {
-		flex-direction: row;
-	}
-	
-	.right-side--background--img {
-		background-repeat: no-repeat;
-		background-size: 68%;
-		background-position: right 24%;
-
-	}
-	.page__wrapper-box--height {
-    	height: 90%;
-	}
-	.block-box {
-		padding: 20px;
-	}
-	.block-box__title {
-		font-size: 30px;
-		line-height: 30px;
-	}
-	.block-box__title--size--l{
-		font-size: 50px;	   
-	    line-height: 51px;
-	}
-	.block-box__text {
-	    line-height: 13px;
-		font-size: 10px;
-	}
-		.block-box__price {
-		line-height: 30px;
-	    font-size: 30px;
-	
-	}
-	.block-box {
-   		width: 380px;
-	}
-	.page__img--theme--clot {
-	    transform: translateX(20%);
-	    align-self: center;
-	}
-	.vector--flex-wrap {
-    	flex-wrap: wrap;
-    }
-		.block-box__btn {
-	    padding: 0 10px;
-	}
-	.scrooll { 
-		align-items: flex-start;
 	}
 }
