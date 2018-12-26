@@ -614,9 +614,9 @@ label {
 		margin-bottom: 16px;
 	}
 	.block-box__text {
-		margin-bottom: 10px; 
-		background-color: #fff;
+		margin-bottom: 10px;
 	}
+
 	.block-box__parameter {
 		margin-bottom: 10px;
 	}
@@ -682,6 +682,9 @@ and (orientation: portrait) {
    		justify-content: flex-end;
    		transform: translateX(-20%);
    	}
+   	.block-box__text {
+		background-color: #fff;
+	}
    	.vector--width { /* для эксперимента*/
 		margin-bottom: 70px;
 		width: 450px;
