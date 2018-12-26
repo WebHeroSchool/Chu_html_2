@@ -36,7 +36,7 @@
     </header>
 <!-- первый экран -->
     <section class="page page--theme--1st">
-      <div class="page__left-side left-side">
+      <div class="page__left-side left-side left-content--visile">
         <div class="page__wrapper-img page__wrapper-img--height">
           <img class="page__img page__img--theme--girl" alt="LOCO for Girl"> 
         </div> 
@@ -55,13 +55,13 @@
           </div>
         </div>       
       </div>
-      <div class="page__right-side right-side"> 
-        <div class="page__wrapper-box page__wrapper-box--height">  
-          <div class="page__block-box block-box">
-            <h1 class="block-box__title box__title--size--l">Новая коллекция</h1>
-            <p class="block-box__text">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
-            <div class="block-box__wrap-links">
-              <button class="block-box__btn btn">читать дальше</button>
+      <div class="page__right-side right-side right-side--background--img page__right-side--position--start"> 
+        <div class="page__wrapper-box page__wrapper-box--height page__wrapper-box--pos--end">  
+          <div class="page__block-box block-box block-box--position--start">
+            <h1 class="block-box__title block-box__title--size--l">Новая коллекция</h1>
+            <p class="block-box__text block-box__text--visible">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+            <div class="block-box__wrap-links block-box__wrap-links--visible">
+              <a class="block-box__link link">читать дальше</a>
               <div class="block-box__vector vector">
                 <a href="#" class="vector__link link">Другие предложения </a>
                 <div class="vector__wrap-items"> 
@@ -83,16 +83,16 @@
     <section class="page page--theme--2nd"> 
       <div class="page__left-side left-side">
         <div class="page__wrapper-img page__wrapper-img--direction--row">
-          <img class="page__img page__img--theme--bag-gray" title="LOCO bag" alt="Кожанный клатч LOCO">
+          <img class="page__img page__img--theme--bag-gray page__img--visibility" title="LOCO bag" alt="Кожанный клатч LOCO">
           <img class="page__img page__img--theme--bag-pink" title="LOCO bag" alt="Кожанный клатч LOCO">
         </div>
       </div>
       <div class="page__right-side right-side">
-       <div class="page__wrapper-box page__wrapper-box--direction">      
+       <div class="page__wrapper-box">      
           <div class="page__block-box block-box block-box--background--white block-box--widht">
             <h1 class="block-box__title">Кожанный клатч</h1>
             <h2 class="block-box__subtitle text-opacity">осенняя коллекция</h2>
-            <p class="box__text box__text_width--s text-opacity">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+            <p class="block-box__text block-box__text_width--s text-opacity">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
             <div class="block-box__parameter">
               <div class="block-box__parameter-items">
                 <div class="block-box__item block-box__item--color--gray"></div>
@@ -108,11 +108,11 @@
                 <span class="block-box__counter-btn btn">1</span> 
                 <button class="block-box__counter-btn btn">+</button>
               </div>
-              <button class="btn box__btn-add">добавить в корзину</button>
+              <button class="block-box__btn-add btn">добавить в корзину</button>
             </div>
           </div>
-          <div class="page__vector vector vector--width">
-          <a href="#" class="vector__link link">Другие предложения </a>
+          <div class="page__vector vector vector--width vector--visibility">
+          <a href="#" class="vector__link link">Другие предложения</a>
             <div class="vector__wrap-items "> 
               <div class="vector__item1 vector__item1--width"></div>
             <div class="vector__item2"></div>
@@ -123,7 +123,7 @@
     </section>
 <!-- третий экран -->
     <section class="page page--theme--3rd"> 
-      <div class="page__left-side">
+      <div class="page__left-side left-side">
 <!-- обёртка для изображений --> 
         <div class="page__wrapper-img">
           <img class="page__img page__img--theme--clot" title="Одежда от LOCO" alt="Одежда от LOCO">
@@ -154,8 +154,8 @@
               <button class="btn box__btn-add">добавить в корзину</button>
             </div>
           </div>
-          <div class="page__vector vector vector--width vector--justify">
-          <a href="#" class="vector__link link">Другие предложения </a>
+          <div class="page__vector vector vector--width vector--justify vector--flex-wrap vector--rows">
+          <a href="#" class="vector__link link">Другие товары на LOCO.COM </a>
             <div class="vector__wrap-items "> 
               <div class="vector__item1 vector__item1--width--s"></div>
             <div class="vector__item2"></div>
