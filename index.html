@@ -1,44 +1,176 @@
-<DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <link href="./style.css" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-    <title>СSS-2</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Loco</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
   </head>
   <body>
-
-    <!-- шапка -->
-    <header class="header">
-      <nav class="header__menu">
-        <ul>
-          <li>
-            <a>main</a>
-          </li>
-          <li>
-            <a>second</a>
-          </li>
-          <li>
-            <a>third</a>
-          </li>
-        </ul>
-      </nav>
-      <h1>CSS-lecture-2</h1>
-    </header>
-
-    <!--  main -->
-    <main id="main">
-      <div class="container">
-        <p class="main__text1">Комбинатор '+' выбирает элемент, который находится непосредственно после указанного элемента, если у них общий родитель.</p>
-        <p class="main__text2">Комбинатор <a href="//whs.getcourse.ru/pl/teach/control/lesson/view?id=22145632">'+ +'</a> выбирает элемент, который находится непосредственно после указанного элемента, если у них <q>общий родитель</q>.</p>
+    <header class="header">  
+      <div class="header__left-side left-side">
+        <span class="header__logo">LOCO</span>
+<!--  выбор языка  --> 
+        <div class="header__lang-box">
+          <div class="header__lang">RU</div>
+            <div class="header__arrow arrow-box">
+              <div class="arrow-box__arrow"></div>
+            </div>            
+        </div>
       </div>
-      <p class="main__text3">Aaa!!!</p>
-    </main>
-
-    <footer>
-      <img class="footer__img" src="https://images.wallpaperscraft.ru/image/kot_morda_son_pyatnistyy_52396_300x168.jpg" alt="cat" title="Cat">
+      <div class="right-side header__right-side">
+<!--основное меню-->
+        <div class="header__menu">
+          <input type="checkbox" class="header__menu-icon" id="header__menu-icon">
+          <label  for="header__menu-icon"></label>
+          <span class="header__menu-line header__menu-line--first"></span>
+          <span class="header__menu-line header__menu-line--second"></span>
+          <span class="header__menu-line header__menu-line--third"></span>
+          <span class="header__menu-line header__menu-line--fourth"></span>
+          <nav class="header__menu-links">
+            <a class="header__menu-item">пункт меню 1</a>
+            <a class="header__menu-item">пункт меню 2</a>
+          </nav>
+        </div>     
+      </div>
+    </header>
+<!-- первый экран -->
+    <section class="page page--theme--1st">
+      <div class="page__left-side left-side left-content--visile">
+        <div class="page__wrapper-img page__wrapper-img--height">
+          <img class="page__img page__img--theme--girl" alt="LOCO for Girl" src="img/loco-girl.jpg"> 
+        </div> 
+<!--coциальные сети-->
+        <div class="page__social social">
+          <div class="social__wrapper">
+            <a href="#" class="social__item">
+              <img src="img/instagram.svg" title="Страничка Loco в instagram" alt="loco instagram">
+            </a>
+            <a href="#" class="social__item">
+              <img src="img/vcontacte.svg" title="Страничка Loco в VK" alt="loco in VK">
+            </a>
+            <a href="#" class="social__item">
+              <img src="img/facebook.svg" title="Страничка Loco  FB" alt="loco in FB">
+            </a>            
+          </div>
+        </div>       
+      </div>
+      <div class="page__right-side right-side right-side--background--img page__right-side--position--start"> 
+        <div class="page__wrapper-box page__wrapper-box--height page__wrapper-box--pos--end">  
+          <div class="page__block-box block-box block-box--position--start">
+            <h1 class="block-box__title block-box__title--size--l">Новая коллекция</h1>
+            <p class="block-box__text block-box__text--visible">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+            <div class="block-box__wrap-links block-box__wrap-links--visible">
+              <a href="#" class="block-box__link link">читать дальше</a>
+              <div class="block-box__vector vector">
+                <a href="#" class="vector__link link">Другие предложения</a>
+                <div class="vector__wrap-items"> 
+                  <div class="vector__item1"></div>
+                  <div class="vector__item2"></div>
+                </div>
+              </div>  
+            </div>  
+          </div> 
+        </div>
+        <div class="page__scrool scrooll">
+         <div class="scrooll__wrapper">
+            <div class="scrooll__roll"></div>
+         </div>
+        </div>
+      </div>
+    </section>
+<!-- второй экран -->
+    <section class="page page--theme--2nd"> 
+      <div class="page__left-side left-side">
+        <div class="page__wrapper-img page__wrapper-img--direction--row">
+          <img class="page__img page__img--theme--bag-gray page__img--visibility" title="LOCO bag" alt="Кожанный клатч LOCO" src="img/bag-gray.png">
+          <img class="page__img page__img--theme--bag-pink" title="LOCO bag" alt="Кожанный клатч LOCO" src="img/bag-pink.png">
+        </div>
+      </div>
+      <div class="page__right-side right-side">
+       <div class="page__wrapper-box">      
+          <div class="page__block-box block-box block-box--background--white block-box--widht">
+            <h1 class="block-box__title">Кожанный клатч</h1>
+            <h2 class="block-box__subtitle text-opacity">осенняя коллекция</h2>
+            <p class="block-box__text block-box__text_width--s text-opacity">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+            <div class="block-box__parameter">
+              <div class="block-box__parameter-items">
+                <div class="block-box__item block-box__item--color--gray"></div>
+                <div class="block-box__item block-box__item--color--pink"></div>
+                <div class="block-box__item block-box__item--color--blue"></div>
+                <div class="block-box__item block-box__item--color--green"></div>
+              </div>
+              <span class="block-box__price">1990₽</span>
+            </div>                 
+            <div class="block-box__counter">
+              <div class="block-box__counter-items">
+                <button class="block-box__counter-btn btn ">-</button>
+                <span class="block-box__counter-btn btn">1</span> 
+                <button class="block-box__counter-btn btn">+</button>
+              </div>
+              <button class="block-box__btn-add btn">добавить в корзину</button>
+            </div>
+          </div>
+          <div class="page__vector vector vector--width vector--visibility">
+          <a href="#" class="vector__link link">Другие предложения</a>
+            <div class="vector__wrap-items "> 
+              <div class="vector__item1 vector__item1--width"></div>
+            <div class="vector__item2"></div>
+          </div>
+        </div>
+        </div>
+      </div>     
+    </section>
+<!-- третий экран -->
+    <section class="page page--theme--3rd"> 
+      <div class="page__left-side left-side">
+<!-- обёртка для изображений --> 
+        <div class="page__wrapper-img">
+          <img class="page__img page__img--theme--clot" title="Одежда от LOCO" alt="Одежда от LOCO" src="img/clot.jpg">
+        </div>
+      </div>
+      <div class="page__right-side right-side">
+        <div class="page__wrapper-box page__wrapper-box--direction"> 
+          <div class="page__block-box block-box block-box--background--pink block-box--widht">
+            <h1 class="block-box__title">Serene Total Look</h1>
+            <h2 class="block-box__subtitle text-opacity">осенняя коллекция</h2>
+            <p class="block-box__text box__text_visual text-opacity">Джинсы, свитер, обувь.<br> В комплект также входит пакет ароматного чая и кружка.</p>
+    <!-- выбор цвета -->
+            <div class="block-box__parameter block-box__parameter--visibilty">
+              <div class="block-box__parameter-items">
+                <div class="block-box__item block-box__item--color--gray"></div>
+                <div class="block-box__item block-box__item--color--pink"></div>
+                <div class="block-box__item block-box__item--color--blue"></div>
+                <div class="block-box__item block-box__item--color--green"></div>
+              </div>
+              <span class="block-box__price">1990₽</span>
+            </div>                 
+            <div class="block-box__counter">
+              <div class="block-box__counter-items">
+                <button class="block-box__counter-btn btn ">-</button>
+                <span class="block-box__counter-btn btn">1</span> 
+                <button class="block-box__counter-btn btn">+</button>
+              </div>
+              <button class="btn box__btn-add">добавить в корзину</button>
+            </div>
+          </div>
+          <div class="page__vector vector vector--width vector--justify vector--flex-wrap vector--rows">
+          <a href="#" class="vector__link link">Другие товары на LOCO.COM </a>
+            <div class="vector__wrap-items "> 
+              <div class="vector__item1 vector__item1--width--s"></div>
+            <div class="vector__item2"></div>
+            </div>
+          </div> 
+        </div>
+      </div>     
+    </section>
+<!-- подвал -->
+    <footer class="footer">
+      <span class="footer__dev">разработано в</span>
+      <div class="footer__whs">
+        <span class="footer__webhero">WebHero</span>
+      <span class="footer__shcool">Shcool</span>
+      </div>
     </footer>
-  </body>
-
-  </html>
+  </body>    
+</html>
