@@ -602,7 +602,6 @@ label {
 	}
 
 	.page__img--theme--clot {
-	    content: url(../img/clot.png);
 	    width: 120%;
 	    transform: translateX(15%);
 	}
