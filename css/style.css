@@ -859,6 +859,9 @@ and (orientation: portrait) {
 		background-size: 68%;
 		background-position: right 24%;
 	}
+	.arrow-box__arrow {
+		transform: translateY(85vh) rotate(45deg);
+	}
 
 	.page--theme--1st {
     	background: #fff;
