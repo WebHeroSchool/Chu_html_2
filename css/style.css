@@ -805,7 +805,7 @@ and (orientation: portrait) {
 	}
 	
 	.right-side--background--img {
-		background-image: url(../img/loco-girl-2.png);
+		background-image: url(../img/loco-girl-2.jpg);
 		background-size: cover;
 	}
 
