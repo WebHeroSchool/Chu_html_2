@@ -859,6 +859,7 @@ and (orientation: portrait) {
 		background-size: cover;
 		background-position: right 19%;
 	}
+	
 	.arrow-box__arrow {
 		transform: translateY(85vh) rotate(45deg);
 	}
