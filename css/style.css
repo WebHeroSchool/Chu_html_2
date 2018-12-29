@@ -856,8 +856,8 @@ and (orientation: portrait) {
 	
 	.right-side--background--img {
 		background-repeat: no-repeat;
-		background-size: 68%;
-		background-position: right 24%;
+		background-size: cover;
+		background-position: right 19%;
 	}
 	.arrow-box__arrow {
 		transform: translateY(85vh) rotate(45deg);
@@ -866,6 +866,10 @@ and (orientation: portrait) {
 	.page--theme--1st {
     	background: #fff;
     }
+
+    .page__wrapper-box--height {
+	    height: 100%;
+	}
 
     .block-box {
 		padding: 15px 20px;
