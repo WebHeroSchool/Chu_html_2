@@ -69,7 +69,6 @@ body {
 .right-side {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	height: 100%;
 	width: 50%;
 }
@@ -259,6 +258,9 @@ body {
 .page__wrapper-box--height {
 	height: calc(100% - 92px);
 }
+.page__wrapper-box--pos--end {
+	margin: 10px 0 0 65px;
+}
 
 .block-box { /* контейнер для описания товара */
 	display: flex;
@@ -376,7 +378,6 @@ body {
 .scrooll { /* иконка прокрутки - мышь  */
     display: flex;
 	justify-content: flex-start;
-	align-items: center;
 	height: 92px;
 	width: 100%;
 }
