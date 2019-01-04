@@ -1,6 +1,7 @@
-html {
+﻿html {
 	font-size: 10px; /*попробовать с rem величиной*/
 }
+
 body {
 	color: #000;
 	font-family: Montserrat, sans-serif;
@@ -34,23 +35,26 @@ body {
 }
 
 .header__logo {
-	padding-left: 54px;
+	padding-left: 53px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
 	font-size: 30px;
 	text-align: center;
 	letter-spacing: 0.07em;
+	margin-top: 19px;
 }
 
-.header__lang-box {
+.header__lang-box { 
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
 	font-size: 20px;
 	display: flex;
 	align-items: center;
-	padding-right: 24px;
+	padding-right: 27px;
+	margin-top: 15px;
+	
 }
 
 .arrow-box__arrow {
@@ -98,7 +102,7 @@ body {
 	align-items: center;
 }
 
-label {
+.header__menu-label {
    position: absolute;
     width: 92px;
     height: 92px;
@@ -216,21 +220,19 @@ label {
 }
 
 .page__img--theme--girl {
-	transform: translateX(15%);
-	width: 70%;
+	transform: translateX(18%);
+	width: 78%;
 }
 
 .social {
 	height: 92px;
-	align-self: flex-end;
 	display: flex;	
 	width: 100%;
-	align-items: center;
-	justify-content: flex-start;
 }
 
 .page__social {
 	margin-left: 52px;
+	margin-top: 10px;
 }
 
 .social__wrapper { 
@@ -356,7 +358,6 @@ label {
 	align-items: center;
 }
 
-
 .vector__item1 {
 	display: flex;
 	height: 1px;
@@ -458,19 +459,24 @@ label {
 	transform: scale(1.25);
 }
 
-.block-box__item--color--gray {
+.block-box__item:focus { /*для примера*/
+	transform: scale(1.25);
+	outline: none;
+}
+
+.block-box__parameter-items :first-child {
 	background: #DEDEDE;
 }
 
-.block-box__item--color--pink{
+.block-box__parameter-items :nth-child(2) {
 	background: #F29F9F;
 }
 
-.block-box__item--color--blue {
+.block-box__parameter-items :nth-child(3) {
 	background: #A8BFF9;
 }
 
-.block-box__item--color--green {
+.block-box__parameter-items :nth-child(4) {
 	background: #90BD8F;
 }
 
@@ -946,11 +952,6 @@ and (orientation: portrait) {
 	.block-box__item {
 		width: 23.35px;
 		height: 22.89px;
-	}
-
-	.block-box__item:hover {
-		height: 29px;
-		width: 29px;
 	}
 
 	.block-box__price {
