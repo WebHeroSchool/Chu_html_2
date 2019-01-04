@@ -957,7 +957,7 @@ and (orientation: portrait) {
 		height: 22.89px;
 	}
 
-	.block-box__price {
+	.block-box__price  {
 		line-height: 28px;
 		font-size: 20px;
 	}
