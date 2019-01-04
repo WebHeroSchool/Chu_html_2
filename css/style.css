@@ -259,7 +259,7 @@ body {
 	height: calc(100% - 92px);
 }
 .page__wrapper-box--pos--end {
-	margin: 10px 0 0 65px;
+	margin: 10px 0 0 64px;
 }
 
 .block-box { /* контейнер для описания товара */
@@ -327,7 +327,7 @@ body {
 
 .block-box__link {
 	border: 2px solid #000;
-	padding: 0 40px;
+	padding: 0 38px;
 }
 
 .block-box__wrap-links { /* отображение стрелок у ссылок */
@@ -351,6 +351,9 @@ body {
 
 .block-box__vector {
 	width: auto;
+}
+.block-box__vector-trans {
+	transform: translateX(12px);
 }
 
 .vector__link{
@@ -386,8 +389,7 @@ body {
 
 .page__scrool {
 	align-self: flex-end;
-	    margin-top: 7px;
-	    transform: translateX(-13px);
+	    transform: translateX(-16px);
 }
 
 .scrooll__wrapper {
