@@ -281,7 +281,8 @@ body {
 
 .block-box__title--size--l {
 	font-size: 80px;
-	margin-bottom: 26px;
+	margin-bottom: 19px;
+	    margin-top: 10px;
 	line-height: 82px;
 }
 
@@ -291,7 +292,7 @@ body {
 	line-height: 21px;
 	font-size: 15px;
 	margin: 0;
-	margin-bottom: 36px;
+	margin-bottom: 57px;
 }
 
 .btn {
@@ -315,17 +316,17 @@ body {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 44px;
+	line-height: 40px;
 	font-size: 13px;
 	text-decoration: none;
 	text-transform: uppercase;
-	height: 44px;
+	height: 40px;
 	border: none;
 }
 
 .block-box__link {
 	border: 2px solid #000;
-	padding: 0 20px;
+	padding: 0 40px;
 }
 
 .block-box__wrap-links { /* отображение стрелок у ссылок */
@@ -957,7 +958,7 @@ and (orientation: portrait) {
 		height: 22.89px;
 	}
 
-	.block-box__price  {
+	.block-box__price {
 		line-height: 28px;
 		font-size: 20px;
 	}
