@@ -1,4 +1,4 @@
-﻿html {
+html {
 	font-size: 10px; /*попробовать с rem величиной*/
 }
 
@@ -221,7 +221,7 @@ body {
 
 .page__img--theme--girl {
 	transform: translateX(18%);
-	width: 78%;
+	width: 76%;
 }
 
 .social {
@@ -383,13 +383,15 @@ body {
 
 .page__scrool {
 	align-self: flex-end;
+	    margin-top: 7px;
+	    transform: translateX(-13px);
 }
 
 .scrooll__wrapper {
 	border: 2px solid #000;
 	border-radius: 15px;
-	width: 27px;
-	height: 46px;
+	width: 23px;
+	height: 42px;
 }
 
 .scrooll__roll {
