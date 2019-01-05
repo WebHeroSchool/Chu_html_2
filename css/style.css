@@ -190,7 +190,8 @@ label {
   font-size: 80px;
   line-height: 82px;
   padding-left: 3px;
-  margin: 0 0 18px 0;
+  margin: 0;
+  margin-bottom: 18px;
   letter-spacing: 0.3px;
   font-weight: bold;
 }
@@ -198,7 +199,8 @@ label {
 .info__text {
   max-width: 467px;
   min-width: 200px;
-  margin: 0 0 38px 0;
+  margin: 0;
+  margin-bottom: 38px;
   padding-left: 3px;
 }
 
