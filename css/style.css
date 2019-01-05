@@ -392,7 +392,7 @@ body {
 
 .page__scrool {
 	align-self: flex-end;
-	    transform: translateX(-16px);
+    transform: translate(-13px, -3px);
 }
 
 .scrooll__wrapper {
