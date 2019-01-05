@@ -51,7 +51,7 @@
   color: #fff;
 }
 
-.lang-switcher__lang-arrow::before {
+.lang-switcher__lang-arrow::before {/* ставить стрелку сразу после элемента */
   content: url(../img/lang-arrow.svg);
   cursor: pointer;
 }
@@ -162,7 +162,7 @@ label {
   display: flex;
 }
 
-.content {
+.content { /*общее для content */
   display: flex;
   align-items: center;
   z-index: 2;
