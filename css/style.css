@@ -1,5 +1,6 @@
 html {
 	font-size: 10px; /*попробовать с rem величиной*/
+	box-sizing: border-box;
 }
 
 body {
@@ -7,8 +8,6 @@ body {
 	font-family: Montserrat, sans-serif;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-
 }
 
 .header {
@@ -269,7 +268,8 @@ body {
 	flex-wrap: wrap;
 	z-index: 100;
 }
-.block-box--size--large {
+
+.block-box--width--1 {
 	max-width: 491px;
 }
 
@@ -434,6 +434,9 @@ body {
 .block-box--background--white{
 	background-color: #fff;
 }
+.block-box--widht--2 {
+	width: 488px;
+}
 
 .text-opacity {
 	opacity: 0.5;
@@ -544,6 +547,9 @@ body {
 
 .block-box--background--pink {
 	background: #FAE8E4;
+}
+.block-box--widht--3 {
+	width: 475px;
 }
 
 .block-box__text_visual {
