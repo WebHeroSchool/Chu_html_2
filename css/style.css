@@ -422,12 +422,12 @@ body {
 }
 
 .page__img--theme--bag-gray{
-	transform: translateX(60%);
+    transform: translate(67%, -6%);
 	width: 100%;
 }
 
 .page__img--theme--bag-pink {
-	transform: translateX(-10%);
+	transform: translateX(-6%);
 	width: 100%;
 }
 
