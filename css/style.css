@@ -1,9 +1,12 @@
-﻿body {
+﻿html {
+	font-size: 10px;/* поэкспериментировать  с  rem*/
+}
+body {
   margin: 0;
   font-family: Montserrat, sans-serif;
   font-weight: normal;
   line-height: 21px;
-  font-size: 15px;/* поэкспериментировать  с  rem*/
+  font-size: 15px;
   color: #000;
 }
 
@@ -259,6 +262,7 @@ label {
   left: 11px;
   top: 10px;
 }
+
 @media (max-width: 1380px) {
   .page-promo__img {
     max-width: 45%;
@@ -269,7 +273,7 @@ label {
     line-height: 70px;
     font-size: 70px;
   }
- }
+}
 /* второй экран *
 .page--theme--2nd {
 	background: #FAE8E4;
