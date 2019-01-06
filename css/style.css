@@ -981,9 +981,15 @@ and (orientation:landscape) {
   .page-product__wrap {
     top: 0;
   }
-
-  .page-total-look__wrap {
+.page-total-look__wrap {
     top: 5%;
+  }  
+}
+
+@media only screen
+and (max-width:600px) 
+and (orientation:landscape) {
+  .page-total-look__wrap {
     left: -10%;
   }
 }
