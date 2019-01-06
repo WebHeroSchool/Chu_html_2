@@ -295,6 +295,7 @@ label {
 
 .page-product__wrap {
   margin-right: 20px;
+  margin-bottom: 25px;
   z-index: 10;
 }
 
@@ -414,7 +415,7 @@ label {
 .product-content-other {
   display: grid;
   position: relative;
-  top: 27px;
+  top: 40px;
   left: 5px;
   grid-template-columns: 236px minmax(25px, 1fr);
 }
