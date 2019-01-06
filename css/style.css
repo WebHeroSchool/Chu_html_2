@@ -237,7 +237,7 @@ label {
 
 .other__link--img::after {
   content: url(../img/arrow.svg);
-  margin-left: 19px;
+  margin-left: 22px;
 }
 
 .page__scroll{
@@ -417,7 +417,7 @@ label {
   position: relative;
   top: 40px;
   left: 5px;
-  grid-template-columns: 236px minmax(25px, 1fr);
+  grid-template-columns: 236px minmax(25px, 415px);
 }
 
 .other__arrow {
@@ -846,7 +846,7 @@ label {
   .subtitle {
     line-height: 10px;
     font-size: 10px;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.07em;
   }
   
   .product-card__subtitle {
