@@ -417,12 +417,16 @@ label {
   position: relative;
   top: 40px;
   left: 5px;
-  grid-template-columns: 236px minmax(25px, 415px);
+  grid-template-columns: 236px minmax(25px, 1fr);
 }
 
 .other__arrow {
   background: url(../img/arrow.png) right center no-repeat;
   height: 16px;
+}
+
+.other__arrow--position {
+  transform: translateX(-10px);
 }
 
 .page-total-look {
