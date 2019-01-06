@@ -952,6 +952,10 @@ label {
   .total-look-other__link {
     font-size: 15px;
   }
+
+  .other__arrow--position-total {
+    transform: translateX(-1px);
+  }
 }
 
 @media only screen
