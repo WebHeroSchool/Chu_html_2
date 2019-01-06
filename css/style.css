@@ -429,6 +429,10 @@ label {
   transform: translateX(-10px);
 }
 
+.other__arrow--position-total {
+  transform: translateX(3px);
+}
+
 .page-total-look {
   background-image: linear-gradient(to right, #EBE3D8 26.94%, #000 26.94%, #000 32.01%, #EBE3D8 32.01%, #EBE3D8 100%);
   justify-content: space-around;
@@ -458,7 +462,7 @@ label {
 }
 
 .total-look-card {
-  margin-top: 14px;
+  margin-top: 11px;
   margin-bottom: 37px;
   max-width: 475px;
   background: #FAE8E4;
@@ -481,7 +485,7 @@ label {
 .total-look-other {
   display: grid;
   grid-template-columns: 236px minmax(25px, 1fr);
-  margin-left: 130px;
+  margin-left: 133px;
 }
 
 .page-total-look__footer {
