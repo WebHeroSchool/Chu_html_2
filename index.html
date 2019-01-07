@@ -9,7 +9,7 @@
   </head>
   <body>
 <!-- первый экран -->
-    <div class="page page-promo">
+    <article class="page page-promo">
       <div class="page__left-block">
         <header class="page__header header">
           <span class="header__logo">LOCO</span>
@@ -28,7 +28,7 @@
         </footer>
       </div>
 <!-- меню -->
-      <div class="page__menu menu">
+      <nav class="page__menu menu">
         <div class="menu__icon">
           <input type="checkbox"  id="menu__check">
           <label  for="menu__check"></label>
@@ -37,8 +37,8 @@
           <span class="menu__icon-item menu__icon-item--third"></span>
           <span class="menu__icon-item menu__icon-item--fourth"></span>
         </div>
-      </div>
-      <div class="right-block">
+      </nav>
+      <article class="right-block">
         <div class="page-promo__content content">
           <img class="page-promo__img" src="img/loco-girl.jpg" alt="Новая коллекция">
           <section class="page__info info">
@@ -52,11 +52,12 @@
             </div>
           </section>
         </div>
-      </div>
-      <div class="scroll page__scroll"></div>
-    </div>
+      </article>
+      <a class="scroll page__scroll" href="#page-product"></a>
+    </article>
 <!-- второй экран -->
-    <div class="page page-product">
+    <article class="page page-product">
+      <a name="page-product" class="page-product__ancord"></a>
       <div class="page-product__content content">
         <div class="product-img product-content__img">
           <div class="product-img__box product-img--position--front">
@@ -101,9 +102,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </article>
 <!-- третий экран -->
-    <div class="page-total-look page">
+    <article class="page-total-look page">
       <div class="total-look-content content">
         <div class="total-look-img__wrap">
           <img class="total-look-img" src="img/clot.jpg" alt="Serene Total Look">
@@ -133,8 +134,10 @@
       </div>
       <footer class="copyright page-total-look__footer">
           <span class="copyright__text">Разработано в</span>
-          <img class="copyright-whs" src="img/webhero.png" alt="WebHeroSchool">
+          <a class="copyring__link" href="http://whs.getcourse.ru/teach/control">
+            <img class="copyright-whs" src="img/webhero.png" alt="WebHeroSchool">
+          </a>
       </footer>
-    </div>
+    </article>
   </body>
 </html>
