@@ -251,6 +251,7 @@ label {
   height: 42px;
   border: 2px solid #000;
   border-radius: 15px;
+  z-index: 50;
 }
 
 .scroll::after {
@@ -375,6 +376,10 @@ label {
   height: 38px; 
 }
 
+.select-color__item:hover {
+  transform: scale(1.2); 
+}
+
 .price__value {
   font-weight: bold;
   line-height: 30px;
@@ -431,6 +436,12 @@ label {
 
 .other__arrow--position-total {
   transform: translateX(3px);
+}
+
+.page-product__ancord {
+  position: absolute;
+  top: 0;
+  height: 0;
 }
 
 .page-total-look {
@@ -505,6 +516,10 @@ label {
   text-transform: uppercase;
   line-height: normal;
   margin-right: 15px;
+}
+
+.copyring__link {
+  cursor: pointer;
 }
 
 
@@ -875,7 +890,7 @@ label {
   .select-color__item {
     width: 23px;
     height: 23px;
-    margin-right: 9.14px;
+    margin-right: 10px;
   }
 
   .select-color__item--checked {
