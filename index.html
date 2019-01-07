@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+<!--подключение jquery через google-->
   </head>
   <body>
 <!-- первый экран -->
@@ -47,17 +49,17 @@
               Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.
             </p>
             <button class="info__read-btn button">Читать дальше</button>
-            <div class="other info__other">
+            <div class="other info__other" id="scroll">
              <a class="other__link other__link--img" href="#">Другие предложения</a>
             </div>
           </section>
         </div>
       </article>
-      <a class="scroll page__scroll" href="#page-product"></a>
+      <a class="scroll page__scroll" href="#page-product" id="scroll"></a>
     </article>
 <!-- второй экран -->
     <article class="page page-product">
-      <a name="page-product" class="page-product__ancord"></a>
+      <a class="page-product__ancord" id="page-product"></a>
       <div class="page-product__content content">
         <div class="product-img product-content__img">
           <div class="product-img__box product-img--position--front">
@@ -139,5 +141,6 @@
           </a>
       </footer>
     </article>
+    <script type="text/javascript" src="js/scroll.js"></script>
   </body>
 </html>
