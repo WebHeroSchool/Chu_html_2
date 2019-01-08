@@ -797,6 +797,8 @@ label {
   .menu__icon-item {
     width: 26px;
     height: 3px;
+    max-height: 3px;
+    min-height: 3px;
   }
 
   .right-block { 
